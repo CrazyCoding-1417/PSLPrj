@@ -27,7 +27,7 @@ class ConnectedLogin extends Component {
       <div className="login-container">
         <div
           style={{
-            height: 200,
+            height: 300,
             width: 200,
             display: "flex",
             flexDirection: "column"
