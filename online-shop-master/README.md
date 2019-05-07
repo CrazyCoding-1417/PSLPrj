@@ -18,3 +18,22 @@ Online Store Front implemented using React, Redux, React router, and React Mater
 3. ```npm install```
 4. ```npm start``` ( this will make the application available in the browser)
 
+
+# Twitter login POC using React Hook
+
+Obs: this features needs local server running.
+
+## How to test:
+1. from root folder : ```npm install``` and ```npm start``` 
+2. ```/LocalServer``` : ```npm install``` and ```gulp develop``` to run local server
+
+## Using:
+* react-twitter-auth 
+* express-jwt 
+* passport 
+* passport-twitter-token 
+* MongoDB
+
+## Links:
+https://medium.com/@robince885/how-to-do-twitter-authentication-with-react-and-restful-api-e525f30c62bb
+https://github.com/GenFirst/react-node-twitter-login
