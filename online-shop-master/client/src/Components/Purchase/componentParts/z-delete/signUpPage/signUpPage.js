@@ -134,7 +134,7 @@ const signUpPage = props =>{
               name="subscript"
               type="checkbox"
               checked={subscript}
-              onChange={changeSubscript}
+              onClick={changeSubscript}
               />
               I'd like to receive exclusive email offers, special promotions and project inspiration.
           </label>
@@ -148,7 +148,7 @@ const signUpPage = props =>{
                     name="1"
                     type="checkbox"
                     checked={(lowesCard === "1")? true: false}
-                    onChange={()=>setLowesCard("1")}
+                    onClick={()=>setLowesCard("1")}
                     />
                   I'll use my phone number to track my in-store purchases. I don't want a physical MyLowe's card.
                 </label>
@@ -162,7 +162,7 @@ const signUpPage = props =>{
                     name="2"
                     type="checkbox"
                     checked={(lowesCard === "2")? true: false}
-                    onChange={()=>setLowesCard("2")}
+                    onClick={()=>setLowesCard("2")}
                     />
                   I already have a MyLowe's card.
                 </label>
@@ -176,14 +176,12 @@ const signUpPage = props =>{
                     name="3"
                     type="checkbox"
                     checked={(lowesCard === "3")? true: false}
-                    onChange={()=>setLowesCard("3")}
+                    onClick={()=>setLowesCard("3")}
                     />
                   Mail me a MyLowe's card.
                 </label>
               </div>
-              {(lowesCard==="3")?
-                <MailMyCard
-                 onMailMyCard={(e)=>console.log(e.target.name)}/>:""}
+              {(lowesCard==="3")?<MailMyCard onMailMyCard={(e)=>console.log(e.target.name)}/>:""}
             </div>
           </div>
           <p>By clicking Create Account, you agree to the Terms and Conditions.</p>

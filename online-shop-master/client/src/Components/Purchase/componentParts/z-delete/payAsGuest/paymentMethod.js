@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './payAsGuest.css';
 
 const paymentMethod =()=>{
-  const [cardNum, setCardNum] = useState("")
-  const [cvv, setCvv] = useState("")
+  const [cardNum, setCardNum] = useState(null)
+  const [cvv, setCvv] = useState(null)
   const [expMonth, setExpMonth] = useState("Month")
   const [expYear, setExpYear] = useState("Year")
   const [cardForm, setCardForm] = useState({})
-  const [btnActive, setBtnActive] = useState(true)
-
 
   useEffect(()=>
     setCardForm({
@@ -19,22 +17,12 @@ const paymentMethod =()=>{
     })
   )
 
-  useEffect(()=>{
-     checkInput()
-  },[cardNum, cvv, expMonth, expYear])
-
   const months = [
     "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"
   ]
   const years = [
     2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028
   ]
-
-  const checkInput =()=>{
-    const info = [cardNum, cvv, expMonth, expYear];
-    const result = info.filter((str)=> str.length > 0);
-    return (result.length >= 4)? setBtnActive(false): '';
-  }
 
   return(
     <div className="card card-primary brd-none v-spacing-jumbo">
@@ -44,15 +32,14 @@ const paymentMethod =()=>{
           <input
               name="payment-method"
               type="checkbox"
-              checked
-              onChange={()=>null}
+              checked="true"
               />
           Use Card
         </label>
 
         <div className="card-info">
           <div className="form-row">
-            <div className="form-group grid-70 auto-cc-input mobile-grid-100 ">
+            <div className="form-group grid-50 mobile-grid-100">
               <label id="ada-cardNumber">
                 Card Number
               </label>
@@ -65,7 +52,7 @@ const paymentMethod =()=>{
                 onChange={(e)=>setCardNum(e.target.value)}
               />
             </div>
-            <div className="form-group grid-30 mobile-grid-100">
+            <div className="form-group grid-50 mobile-grid-100">
               <label id="ada-cvv">
                 CVV
               </label>
@@ -80,31 +67,21 @@ const paymentMethod =()=>{
             </div>
           </div>
 
-          <p className="expP">
-            Expiration Date
-          </p>
           <div className="form-row">
             <div className="form-group select inverse">
-              <select className="form-control selectInp" value={expMonth} onChange={(e)=>setExpMonth(e.target.value)}>
+              <select className="form-control art-co-rp-newCC-expMonthDrpdown cb-hidden ctHidden" value={expMonth}>
                 {
                   months.map(month=>{
-                    return <option
-                              key={month}
-                              value={month}>
-                                {month}
-                           </option>
+                    return <option value={month}>{month}</option>
                   })
                 }
               </select>
-
-              <select className="form-control selectInp" value={expYear} onChange={(e)=>setExpYear(e.target.value)}>
+            </div>
+            <div className="form-group select inverse">
+              <select className="form-control art-co-rp-newCC-expMonthDrpdown cb-hidden ctHidden" value={expYear}>
                 {
                   years.map(year=>{
-                    return <option
-                              key={year}
-                              value={year}>
-                                {year}
-                           </option>
+                    return <option value={year}>{year}</option>
                   })
                 }
               </select>
@@ -112,9 +89,8 @@ const paymentMethod =()=>{
           </div>
 
           <button
-            className="btn btn-block btn-primary js-submit-credit-card-button art-co-rp-newCC-useCreditCard card-btn"
-            disabled={btnActive}
-            onClick={()=>console.log(cardForm)}
+            className="btn btn-block btn-primary disabled js-submit-credit-card-button art-co-rp-newCC-useCreditCard card-btn"
+            disabled
           >
            USE CARD
           </button>

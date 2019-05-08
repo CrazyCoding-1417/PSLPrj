@@ -35,4 +35,4 @@ app.post('/notifications/discount', (req, res) => {
   res.status(200).json({'success': true, payload})
 });
 
-app.listen(9000, () => console.log('The server has been started on the port 9000'))
+app.listen(2000, () => console.log('The server has been started on the port 2000'))

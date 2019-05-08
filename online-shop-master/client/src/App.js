@@ -11,6 +11,7 @@ import Login from "./Components/Login/Login";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import Footer from "./Components/Footer/Footer";
 import Purchase from "./Components/Purchase/PurchaseIndex";
+import CheckoutPayment from "./Components/Purchase/componentParts/payAsGuest/payAsGuest"
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
               <Route path="/about" render={() => <div>About us</div>} />
               <Route path="/login" component={Login} />
               <Route path="/purchase" component={Purchase} />
+              <Route path="/checkout/payment" component={CheckoutPayment} />
               <ProtectedRoute path="/order" component={Order} />
               <Route
                 component={() => (

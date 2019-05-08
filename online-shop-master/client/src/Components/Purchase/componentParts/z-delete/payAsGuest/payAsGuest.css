@@ -1,27 +1,15 @@
-.payasguess-container{
-  display: block;
-}
 .card.brd-none {
-    border: 1px solid #E5E5E5;
-}
-.card-two{
-  padding: .5em;
+    border-top: 1px solid #E5E5E5;
 }
 .card {
     box-sizing: border-box;
     border-top: 5px solid;
     background: #FFF;
-    width: 670px;
-
 }
 .form-group.select label select {
     width: 100%;
     color: #000;
     appearance: none;
-
-}
-.form-group{
-  padding: .5em;
 }
 .form-control {
     height: 44px;
@@ -87,30 +75,4 @@
 }
 .card-btn{
   width: 250px !important;
-}
-.grid-70 {
-    width: 70%;
-}
-.grid-30 {
-    width: 30%;
-}
-select.form-control.selectInp {
-  width: 25%;
-  float: left;
-  margin-right: .5em;
-}
-.expP{
-  font-weight: 700;
-  position: relative;
-  font-family: Helvetica,Arial,sans-serif;
-  margin: 10px 0 0 10px;
-}
-.store-location-container{
-  padding: .5em;
-  border: 1px solid #CCC;
-  width: 670px;
-}
-.store-location-container p{
-  margin:0px;
-  padding: 0px;
 }
