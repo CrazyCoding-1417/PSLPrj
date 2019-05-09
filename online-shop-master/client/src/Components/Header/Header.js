@@ -62,13 +62,15 @@ class ConnectedHeader extends Component {
         </div>
         <Toolbar style={{ height: "100%" }}>
           <div className="left-part">
-            <img
-              src={cartImage}
-              alt={"Logo"}
-              style={{ marginLeft: 10 }}
-              width="150"
-              height="150"
-            />
+            <a href="/">
+              <img
+                src={cartImage}
+                alt={"Logo"}
+                style={{ marginLeft: 10 }}
+                width="150"
+                height="150"
+              />
+            </a>
           </div>
           <div className="right-part">
             {!this.props.loggedInUser ? (
