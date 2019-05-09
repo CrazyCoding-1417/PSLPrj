@@ -3,12 +3,12 @@ import React, { useState, useEffect } from 'react';
 const banner = (props) =>{
   const [adsBanner, setAdsBanner] = useState([
     {
-      img: "https://lda.lowes.com/is/image/Lowes/PromoTeam_Promo_DP18-108637_Vanities_250?scl=1&201904241422",
+      img: "https://lda.lowes.com/is/image/Lowes/PromoTeam_Promo_DP18-113322_SelectVanities_150?scl=1&201905021454",
       link: "https://www.lowes.com/c/Bathroom",
       title: "Bathroom"
     },
     {
-      img: "//lda.lowes.com/is/image/Lowes/PromoTeam_Promo_DP18-113336_DT_150_HB_BNR_ProgressLighting?scl=1&201904181620",
+      img: "https://lda.lowes.com/is/image/Lowes/PromoTeam_Promo_DP18-113336_DT_150_HB_BNR_ProgressLighting?scl=1&201904181620",
       link: "https://www.lowes.com/c/Lighting-ceiling-fans",
       title: "Lighting"
     },
