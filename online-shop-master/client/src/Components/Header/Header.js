@@ -50,7 +50,7 @@ class ConnectedHeader extends Component {
   render() {
     let { anchorEl } = this.state;
 
-    return ( 
+    return (
       <div>
       <AppBar
         position="static"
@@ -60,15 +60,15 @@ class ConnectedHeader extends Component {
         {/* <a href="" margin="5" textAlign="center"/> */}
           <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
         </div>
-        <Toolbar style={{ height: "100%" }}>              
-          <div className="left-part">            
+        <Toolbar style={{ height: "100%" }}>
+          <div className="left-part">
             <img
               src={cartImage}
               alt={"Logo"}
               style={{ marginLeft: 10 }}
               width="150"
               height="150"
-            />            
+            />
           </div>
           <div className="right-part">
             {!this.props.loggedInUser ? (
@@ -96,18 +96,18 @@ class ConnectedHeader extends Component {
               aria-label="Cart"
               style={{ position: "absolute", right: 0 }}
               onClick={() => {
-                //this.props.dispatch(showCartDlg(true));
+                this.props.dispatch(showCartDlg(true));
               }}
             >
               <Badge badgeContent={this.props.nrOfItemsInCard} color="primary">
                 <ShoppingCartIcon />
               </Badge>
-            </IconButton>            
-          </div>             
-        </Toolbar>        
-      </AppBar>      
+            </IconButton>
+          </div>
+        </Toolbar>
+      </AppBar>
           <Toolbar style={{ backgroundColor:"#004890", color:"white", height: 30}}>
-            <div className="left-part" >            
+            <div className="left-part" >
             <IconButton style={{color:"white"}}
               onClick={() => {
                 this.props.dispatch(toggleMenu());
@@ -118,14 +118,14 @@ class ConnectedHeader extends Component {
             >
               <MenuIcon size="medium" style={{color:"white"}}/>
               <p>Departments</p>
-              <Menu                         
+              <Menu
               open={Boolean(anchorEl)}
               anchorEl={anchorEl}
               //open={false}
               onClose={() => {
                 this.setState({ anchorEl: null });
               }}
-            >            
+            >
               {/* <MenuItem
                 onClick={() => {
                   this.setState({ anchorEl: null });
@@ -189,9 +189,9 @@ class ConnectedHeader extends Component {
             <img src = "/Images/SearchIcon.jpg" height="22" width="22"/>
             {/* {" "} Search */}
             </Button>
-          </div> 
-            </div>                 
-        </Toolbar>             
+          </div>
+            </div>
+        </Toolbar>
       </div>
     );
   }
