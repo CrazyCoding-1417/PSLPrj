@@ -28,7 +28,7 @@ const billingAddress =()=>{
   const checkAddressInput =()=>{
     const info = [ companyName, firstName, lastName, address1, address2, city, state, zip];
     const result = info.filter((str)=> str.length > 0);
-    return (result.length >= 8)? setBtnActive(false): '';
+    return (result.length >= 7)? setBtnActive(false): setBtnActive(true);
   }
 
   const states = [ "AK","AL","AR","AS","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","PR","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY"]

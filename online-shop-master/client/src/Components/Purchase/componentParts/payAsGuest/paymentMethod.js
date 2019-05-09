@@ -4,8 +4,8 @@ import './payAsGuest.css';
 const paymentMethod =()=>{
   const [cardNum, setCardNum] = useState("")
   const [cvv, setCvv] = useState("")
-  const [expMonth, setExpMonth] = useState("Month")
-  const [expYear, setExpYear] = useState("Year")
+  const [expMonth, setExpMonth] = useState("Jan")
+  const [expYear, setExpYear] = useState("2019")
   const [cardForm, setCardForm] = useState({})
   const [btnActive, setBtnActive] = useState(true)
 
@@ -33,7 +33,7 @@ const paymentMethod =()=>{
   const checkInput =()=>{
     const info = [cardNum, cvv, expMonth, expYear];
     const result = info.filter((str)=> str.length > 0);
-    return (result.length >= 4)? setBtnActive(false): '';
+    return (result.length >= 4)? setBtnActive(false): setBtnActive(true);
   }
 
   return(

@@ -1,63 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './payAsGuest.css'
 
 const submitOrderBlock =()=>{
+
   return(
-    <div>
-      <div>
-          <div>
-              <div>
-                <span>Order Summary</span>
-                <span>1 Item</span>
-              </div>
+    <div className=" tablet-grid-40 submitorderblock mobile-grid-100 v-spacing-desktop-large pull-right grid-parent js-position-sticky position-sticky position-top">
+      <div className="v-spacing-large trench trench-small art-co-rp-orderSummary-sec">
+
+        <div className="v-spacing-small order-summary">
+          <div className="order-sum-copy grid-100">
+            <span className="cm-grid-60 grid-60">Order Summary</span>
+            <span className="cm-grid-40 grid-40">1 Item</span>
           </div>
-      <div>
+        </div>
 
+        <div className="order-summ-detail trench trench-small no-border">
+          <hr />
 
-      <div>
-              <hr>
+          <div className="v-spacing-large">
+            <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium total-grid">
+              <div className="cm-grid-60 grid-60 strong art-co-rp-itemsTotalLbl">Item Total</div>
+              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">$3.00</div>
+            </div>
+
+            <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium">
+              <div className="cm-grid-60 grid-60 strong art-co-rp-itemsTotalLbl">Estimated Tax</div>
+              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">$0.24</div>
+            </div>
+
+            <hr />
+
+            <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium estimate-total">
+              <div className="cm-grid-60 grid-60"><h5>Estimated Total</h5></div>
+              <div className="cm-grid-40 grid-40"><h5>$3.24</h5></div>
+            </div>
+          </div>
+
+          <div className="grid-100  v-spacing-large">
+            <a className="js-order-submit met-order-submit btn btn-block btn-add art-co-rp-submitOrderBtn cb-hidden" data-blocked="true" data-enable-submit-order="true" href="/checkout/confirmation" data-submittoken="">
+              <i aria-hidden="true" className="icon-secure"></i> submit order
+            </a>
+          </div>
+        </div>
+
       </div>
-
-            <div>
-                <div>
-                    <div>Item Total</div>
-                    <div>$3.00</div>
-                </div>
-
-                <div>
-                    <div>Estimated Tax
-                        <a tabindex="0" className="link-secondary" data-toggle="popover" data-trigger="focus" data-placement="bottom auto" data-content="Your order may be subject to state and local sales or use taxes (including special fees where required), depending on the shipping address or store location you requested. For further assistance, contact Lowe's Customer Care at 1.800.445.6937 or Lowe's ProServices at 1.844.569.4776." href="#tax-info" data-original-title="" title="">
-                          <span className="info-wrap">
-                            <i className="icon-info" aria-hidden="true"></i>
-                            <span className="ada screen-reader-only">Your order may be subject to state and local sales or use taxes (including special fees where required), depending on the shipping address or store location you requested. For further assistance, contact Lowe's Customer Care at 1.800.445.6937 or Lowe's ProServices at 1.844.569.4776.</span>
-                          </span>
-                        </a>
-                    </div>
-                    <div className="grid-40 align-right art-co-rp-taxes">$0.24</div>
-                </div>
-                <div className="grid-parent grid-100 v-spacing-medium">
-                    <hr>
-                </div>
-                <div className="grid-parent grid-100 v-spacing-medium">
-                    <div className="grid-60">
-                        <h5 className="art-co-rp-estTotalLbl-below">Estimated Total</h5>
-                    </div>
-                    <div className="grid-40 align-right">
-                        <h5 className="art-co-rp-estTotal-below">
-                                    $3.24
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div className="grid-100  v-spacing-large">
-                <a className="js-order-submit met-order-submit btn btn-block btn-add art-co-rp-submitOrderBtn cb-hidden" data-blocked="true" data-enable-submit-order="true" href="/checkout/confirmation" data-submittoken=""><i aria-hidden="true" className="icon-secure"></i> submit order</a>
-            </div>
-
-
-          <div className="grid-100 align-center v-spacing-large">
-
-              <a href="/cart" className="royalBlue art-returnToCartLnk"><i aria-hidden="true" className="icon-arrow-left"></i> Return to cart</a>
-
     </div>
   )
 }

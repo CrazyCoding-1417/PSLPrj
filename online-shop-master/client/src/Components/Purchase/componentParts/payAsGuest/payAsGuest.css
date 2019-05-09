@@ -1,5 +1,6 @@
 .payasguess-container{
-  display: block;
+  padding: 1em;
+  margin:1em;
 }
 .card.brd-none {
     border: 1px solid #E5E5E5;
@@ -11,8 +12,6 @@
     box-sizing: border-box;
     border-top: 5px solid;
     background: #FFF;
-    width: 670px;
-
 }
 .form-group.select label select {
     width: 100%;
@@ -94,6 +93,15 @@
 .grid-30 {
     width: 30%;
 }
+.grid-60 {
+  width: 60%;
+}
+.grid-40 {
+  width: 40%;
+}
+.grid-25 {
+  width:25%;
+}
 select.form-control.selectInp {
   width: 25%;
   float: left;
@@ -108,9 +116,111 @@ select.form-control.selectInp {
 .store-location-container{
   padding: .5em;
   border: 1px solid #CCC;
-  width: 670px;
 }
 .store-location-container p{
   margin:0px;
   padding: 0px;
+}
+.trench.trench-small {
+    padding: 5px;
+}
+.v-spacing-small {
+    margin-bottom: 10px!important;
+}
+.order-sum-copy {
+    padding-top: 10px;
+}
+a.h4, p.h4, span.h4 {
+    font-size: 18px;
+    font-size: 1.2857142857142858rem;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+.trench.trench-small {
+    padding: 5px;
+}
+.trench {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+.grid-100 {
+    clear: both;
+    width: 100%;
+}
+.btn.btn-add:visited {
+    color: #FFF;
+}
+.btn.btn-block {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn.btn-add {
+    cursor: pointer;
+    background-image: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-size: 1rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #FFF;
+    background-color: #338700;
+}
+.btn.btn-add, .btn.btn-secondary {
+    -webkit-box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    font-family: Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    white-space: nowrap;
+    font-weight: 400;
+    padding: 0 15px;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    line-height: 44px;
+}
+.grid-parent {
+    padding-left: 0;
+    padding-right: 0;
+}
+.cm-grid-100{
+  display: block;
+}
+.cm-grid-60{
+  float:left;
+}
+.cm-grid-40{
+  float:left;
+}
+.v-spacing-medium {
+    margin-bottom: 15px!important;
+        display: inline-block;
+}
+.total-grid{
+  font-weight: 600;
+}
+.order-summary{
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.estimate-total{
+  font-size: 1.1em;
+}
+.submitorderblock{
+    border: 1px solid #CCC;
+}
+.fl-left{
+  float: left
 }
