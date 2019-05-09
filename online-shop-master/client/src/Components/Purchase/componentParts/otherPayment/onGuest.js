@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './clickGuest.css'
+import PayPal from './payPal'
 
 
 const onGuest = props => {
@@ -34,6 +35,9 @@ const onGuest = props => {
             alt = "Visa Checkout"
             src = "https://secure.checkout.visa.com/wallet-services-web/xo/button.png?cobrand=false"
              />
+        </div>
+        <div>
+          <PayPal />
         </div>
       </div >
     </div>

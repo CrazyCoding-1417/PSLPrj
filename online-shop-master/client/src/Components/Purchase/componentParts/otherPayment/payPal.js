@@ -23,9 +23,9 @@ const PayPalButton = () => {
 
   return (
     <div style={{marginTop: '10' + 'px'}}>
-      <PaypalExpressBtn 
-      client={client} 
-      currency={currency} 
+      <PaypalExpressBtn
+      client={client}
+      currency={currency}
       total={total}
       onSuccess={onSuccess}
       onCancel={onCancel}
