@@ -4,3 +4,10 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.MuiFormControl-root-117 {
+	display: -ms-inline-flexbox !important;
+	display: inline-flex !important;
+	display: -webkit-box !important;
+}
