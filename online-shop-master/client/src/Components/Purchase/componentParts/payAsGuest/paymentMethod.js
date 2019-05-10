@@ -30,7 +30,7 @@ const paymentMethod =()=>{
     2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028
   ]
 
-  const checkInput =()=>{
+  const checkInput =(props)=>{
     const info = [cardNum, cvv, expMonth, expYear];
     const result = info.filter((str)=> str.length > 0);
     return (result.length >= 4)? setBtnActive(false): setBtnActive(true);
