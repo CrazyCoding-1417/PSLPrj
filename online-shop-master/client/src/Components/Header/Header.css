@@ -6,12 +6,25 @@
     align-items: center;
 }
 
+.left-part--search-menu-bar{
+    max-width: 960px;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.search-input__container{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
 .right-part {
     position: relative;
     display: flex;
     width:150px;
     align-items: center;
-
 }
+
 
  

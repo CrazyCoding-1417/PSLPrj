@@ -1,9 +1,30 @@
-.menu {
-	width: 200px;
+:root{
+  --background-color: #f2f2f2;
+}
+
+.menu-button__text{
+    color: white;
+	margin: 0px;
+}
+
+.menuMain__container{
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+    width: 400px;
+    height: 106%;
+    left: 0px;
+	overflow: hidden;
+}
+
+.menuMain {
+	width: 50%;
 	border-right: 1px solid lightgray;
 	overflow-y: auto;
 	background-color: #FAFAFB;
 	padding-top:10px;
+	position: absolute;
+	z-index: 999;
 }
 
 .menuItem, .menuTitle {
@@ -14,9 +35,34 @@
 	align-items: center;
 	cursor:pointer;
  }
- 
- 
- 
+
+ .menu-list{
+    position:absolute;
+}
+
+.menu-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.15);
+	position: fixed;
+	left: 0px;
+	top: 163px;
+	z-index:5;
+}
+
+.slide{
+	position: absolute;
+	left: 200px;
+	width: 50%;
+	top:0px;
+	height: 100%;
+	z-index: 6;
+	background-color: white;
+	border-bottom: 1px solid var(--background-color);
+    border-right: 1px solid var(--background-color);
+    border-left: 1px solid var(--background-color);
+}
+
 .menuItem:hover {
 	color: #4282ad;
 }
