@@ -35,7 +35,7 @@ const sampleProducts = [
     description:
       "Frigidaire 22.4-cu ft Counter-Depth French Door",
     popular: true,
-    imageUrls: [      
+    imageUrls: [
       "/Images/Product_Fridge1.jpg",
       "/Images/Product_Fridge1.jpg"
     ]
@@ -148,87 +148,87 @@ const categories = [
     name: "Appliances",
     icon: "fas fa-list",
     subCategory: [
-          {
-            name: "Refrigerators"
-          },
-          {
-            name: "Washers & Dryers"
-          },
-          {
-            name: "Ranges"
-          },
-          {
-            name: "Dishwashers"
-          },
-          {
-            name: "Microwaves"
-          },
-          {
-            name: "Vacuum Cleaners & Floor Care"
-          },
-          {
-            name: "Appliance Parts & Accessories"
-          },
-          {
-            name: "Range Hoods"
-          },
-          {
-            name: "Freezers & Ice Makers"
-          },
-          {
-            name: "Wall Ovens"
-          },
-          {
-            name: "Cooktops"
-          },
-          {
-            name: "Small Appliances"
-          },
-          {
-            name: "Beverage Centers & Wine Chillers"
-          },
-          {
-            name: "Garbage Disposals"
-          },
-          {
-            name: "Trash Compactors"
-          },
-          {
-            name: "Commercial Appliances"
-          }
-        ]
+      {
+        name: "Refrigerators"
+      },
+      {
+        name: "Washers & Dryers"
+      },
+      {
+        name: "Ranges"
+      },
+      {
+        name: "Dishwashers"
+      },
+      {
+        name: "Microwaves"
+      },
+      {
+        name: "Vacuum Cleaners & Floor Care"
+      },
+      {
+        name: "Appliance Parts & Accessories"
+      },
+      {
+        name: "Range Hoods"
+      },
+      {
+        name: "Freezers & Ice Makers"
+      },
+      {
+        name: "Wall Ovens"
+      },
+      {
+        name: "Cooktops"
+      },
+      {
+        name: "Small Appliances"
+      },
+      {
+        name: "Beverage Centers & Wine Chillers"
+      },
+      {
+        name: "Garbage Disposals"
+      },
+      {
+        name: "Trash Compactors"
+      },
+      {
+        name: "Commercial Appliances"
+      }
+    ]
   },
   {
     name: "Bathroom",
     icon: "fas fa-tshirt",
-    subCategory:[
+    subCategory: [
       {
         name: "Bathroom Vanities"
-      },{
+      }, {
         name: "Bathroom Faucets & Shower Heads"
-      },{
+      }, {
         name: "Toilets & Toilet Seats"
-      },{
+      }, {
         name: "Bathtubs & Whirlpool Tubs"
-      },{
+      }, {
         name: "Bathroom Accessories & Hardware"
-      },{
+      }, {
         name: "Bathroom Storage"
-      },{
+      }, {
         name: "Bathroom & Pedestal Sinks"
-      },{
+      }, {
         name: "Bathroom Mirrors"
-      },,{
+      }, , {
         name: "Bathroom Exhaust Fans & Parts"
-      },{
+      }, {
         name: "Bathroom Safety"
-      },{
+      }, {
         name: "Bathroom Handles"
-      },{
+      }, {
         name: "Saunas & Components"
-      },{
+      }, {
         name: "Commercial Bathroom Components"
-      },{
+      }, {
         name: "Showers & Shower Doors"
       }
     ]
@@ -236,688 +236,365 @@ const categories = [
   {
     name: "Building Supplies",
     icon: "far fa-gem",
-    subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      { name: "Building Supplies" },
+      { name: "Lumber & Composites" },
+      { name: "Fencing & Gates" },
+      { name: "Decking & Porches" },
+      { name: "Siding & Stone Veneer" },
+      { name: "Roofing" },
+      { name: "Concrete, Cement & Masonry" },
+      { name: "Insulation & Accessories" },
+      { name: "Stairs & Railings" },
+      { name: "Drywall" },
+      { name: "Ventilation" }
+      ,
+      { name: "Ceilings" }
+      ,
+      { name: "Gutters & Accessories" }
+      ,
+      { name: "Asphalt Repair & Tools" }
+      ,
+      { name: "Glass & Acrylic" }
+      ,
+      { name: "Erosion Control" }
+      ,
+      { name: "Columns & Accessories" }
+      ,
+      { name: "Shop All Building Supplies" }
     ]
   },
   {
     name: "Doors & Windows",
     icon: "fas fa-book",
-    subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      { name: "Windows & Doors" },
+      { name: "Exterior Doors" },
+      { name: "Interior Doors" },
+      { name: "Windows" },
+      { name: "Exterior Shutters & Accessories" },
+      { name: "Garage Doors & Openers" },
+      { name: "Awnings & Accessories" },
+      { name: "Weatherstripping" },
+      { name: "Replacement Screens" },
+      { name: "Hurricane Shutter Panels" }
+      ,
+      { name: "Screen Tools" }
     ]
   },
   {
     name: "Electrical",
     icon: "fas fa-desktop",
-    subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      { name: "Electrical" },
+      { name: "Circuit Breakers, Breaker Boxes & Fuses" },
+      { name: "Wall Plates & Jacks" },
+      { name: "Electrical Wire & Cable" },
+      { name: "Electrical Boxes & Covers" },
+      { name: "Light Switches & Dimmers" },
+      { name: "Cords & Surge Protectors" },
+      { name: "Home Automation & Security" },
+      { name: "Conduit & Conduit Fittings" },
+      { name: "Electrical Outlets & Adapters" }
+      ,
+      { name: "Electrical Testers & Tools" }
+      ,
+      { name: "Cable & Wire Connectors" }
+      ,
+      { name: "Home Audio & Video" }
+      ,
+      { name: "Doorbells" }
+      ,
+      { name: "Smoke, Carbon Monoxide & Radon Detectors" }
+      ,
+      { name: "Generators" }
+      ,
+      { name: "Batteries" }
+      ,
+      { name: "Shop All Electrical" }
     ]
-  },{
+  }, {
     name: "Flooring",
-    subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      { name: "Flooring" },
+      { name: "Tile & Tile Accessories" },
+      { name: "Vinyl Flooring" },
+      { name: "Laminate Flooring & Accessories" },
+      { name: "Floor Moulding & Trim" },
+      { name: "Hardwood Flooring & Accessories" },
+      { name: "Carpet & Carpet Tile" },
+      { name: "Grout & Mortar" },
+      { name: "Flooring Underlayment" },
+      { name: "Surface Preparation" }
+      ,
+      { name: "Wall Base" }
+      ,
+      { name: "Multipurpose Flooring" }
+      ,
+      { name: "Underfloor Heating" }
+      ,
+      { name: "Garage Flooring" }
+      ,
+      { name: "Attic Flooring Panels" }
     ]
   }
-  ,{
+  , {
     name: "Hardware",
-    subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      ,
+      { name: "Hardware" },
+      { name: "Door Hardware" },
+      { name: "Fasteners" },
+      { name: "Cabinet Hardware" },
+      { name: "Structural Hardware" },
+      { name: "Chains, Ropes & Tie-Downs" },
+      { name: "Mailboxes & Mailbox Posts" },
+      { name: "Furniture Hardware" },
+      { name: "Signs, Letters & Numbers" },
+      { name: "Gate Hardware" }
+      ,
+      { name: "Safes" }
+      ,
+      { name: "Window Hardware" }
+      ,
+      { name: "Keys & Key Safes" }
+      ,
+      { name: "Picture Hangers" }
+      ,
+      { name: "Specialty Hardware" }
+      ,
+      { name: "Locks" }
+      ,
+      { name: "Hardware Lubricants" }
+      ,
+      { name: "Shop All Hardware" }
     ]
-  },{
+  }, {
     name: "Heating & Cooling",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
+    subCategory: [
+      { name: "Heating & Cooling" },
+      { name: "Air Conditioners & Fans" },
+      { name: "Fireplaces & Stoves" },
+      { name: "Registers & Grilles" },
+      { name: "Air Filters & Accessories" },
+      { name: "Portable & Space Heaters" },
+      { name: "HVAC Duct & Fittings" },
+      { name: "Humidifiers & Dehumidifiers" },
+      { name: "Thermostats" },
+      { name: "Air Purifiers & Accessories" }
+      ,
+      { name: "Furnaces & Furnace Accessories" }
+      ,
+      { name: "Heat Pumps" }
+      ,
+      { name: "Radiator Covers" }
     ]
-  },{
+  }, {
     name: "Home Decor & Furniture",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Home Decor" },
+      { name: "Area Rugs & Mats" },
+      { name: "Blinds & Window Treatments" },
+      { name: "Furniture" },
+      { name: "Mirrors & Mirror Accessories" },
+      { name: "Wallpaper & Wallpaper Accessories" },
+      { name: "Home Accents" },
+      { name: "Wall Art & Decor" },
+      { name: "Pillows & Throws" },
+      { name: "Bedding" }
+    ]
+  }, {
     name: "Kitchen",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Kitchen" },
+      { name: "Kitchen & Bar Sinks" },
+      { name: "Kitchen Cabinetry" },
+      { name: "Kitchen Faucets & Water Dispensers" },
+      { name: "Kitchen Countertops & Accessories" },
+      { name: "Backsplash Panels" },
+      { name: "Kitchenware" }
+    ]
+  }, {
     name: "Lawn & Garden",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Lawn & Garden" },
+      { name: "Mulch" },
+      { name: "Garden Center" },
+      { name: "Lawn Mowers" },
+      { name: "Pavers & Retaining Walls" },
+      { name: "Patio Furniture" },
+      { name: "Lawn & Garden Hand Tools" },
+      { name: "Fertilizer" },
+      { name: "Weed Killers & Preventers" },
+      { name: "Trimmers & Edgers" }
+      ,
+      { name: "Fencing & Gates" }
+      ,
+      { name: "Landscaping" }
+      ,
+      { name: "Plants, Bulbs & Seeds" }
+      ,
+      { name: "Planters, Stands & Window Boxes" }
+      ,
+      { name: "Grills & Outdoor Cooking" }
+      ,
+      { name: "Outdoor Tools & Equipment" }
+      ,
+      { name: "Insect & Pest Control" }
+      ,
+      { name: "Shop All " }
+    ]
+  }, {
     name: "Lighting & Ceiling Fans",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Lighting & Ceiling Fans" },
+      { name: "Ceiling Fans & Accessories" },
+      { name: "Outdoor Lighting" },
+      { name: "Bathroom & Wall Lighting" },
+      { name: "Flush Mount Lighting" },
+      { name: "Pendant Lighting" },
+      { name: "Light Bulbs" },
+      { name: "Chandeliers" },
+      { name: "Lamps & Lamp Shades" },
+      { name: "Lighting Parts & Accessories" }
+      ,
+      { name: "Commercial Lighting" }
+      ,
+      { name: "Recessed Lighting" }
+      ,
+      { name: "Under Cabinet Lighting" }
+      ,
+      { name: "Track Lighting" }
+      ,
+      { name: "Kitchen Island Lighting" }
+      ,
+      { name: "Novelty Lighting" }
+      ,
+      { name: "Night Lights" }
+      ,
+      { name: "Pool Table Lighting" }
+    ]
+  }, {
     name: "Moulding & Millwork",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Moulding & Millwork" },
+      { name: "Moulding" },
+      { name: "Wall Panels & Planks" },
+      { name: "Dowels & Dowel Pins" }
+    ]
+  }, {
     name: "Outdoor Living",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Outdoor Living" },
+      { name: "Patio Furniture" },
+      { name: "Grills & Outdoor Cooking" },
+      { name: "Gazebos, Pergolas & Canopies" },
+      { name: "Fire Pits & Patio Heaters" },
+      { name: "Outdoor Tools & Equipment" },
+      { name: "Fencing & Gates" },
+      { name: "Outdoor Lighting" },
+      { name: "Pavers & Retaining Walls" },
+      { name: "Lawn Mowers" }
+      ,
+      { name: "Pressure Washers" }
+      ,
+      { name: "Decking & Porches" }
+      ,
+      { name: "Landscaping" }
+      ,
+      { name: "Playsets" }
+      ,
+      { name: "Sheds & Outdoor Storage" }
+      ,
+      { name: "Garden Center" }
+      ,
+      { name: "Pools" }
+      ,
+      { name: "Garden Décor" }
+    ]
+  }, {
     name: "Paint",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Paint" },
+      { name: "Paints & Primers" },
+      { name: "Paint Supplies" },
+      { name: "Paint Sprayers" },
+      { name: "Paint Brushes & Rollers" },
+      { name: "Exterior Stains & Floor Coatings" },
+      { name: "Caulking" },
+      { name: "Interior Stains & Finishes" },
+      { name: "Spray Paint & Accessories" },
+      { name: "Patching & Repair" }
+      ,
+      { name: "Cleaners & Chemicals" }
+      ,
+      { name: "Rubberized Coatings" }
+      ,
+      { name: "Resurfacing Kits" }
+    ]
+  }, {
     name: "Plumbing",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Plumbing" },
+      { name: "Pipe & Fittings" },
+      { name: "Plumbing Parts & Repair" },
+      { name: "Water Heaters" },
+      { name: "Valves & Valve Repair" },
+      { name: "Water Pumps & Tanks" },
+      { name: "Water Filtration & Water Softeners" },
+      { name: "Supply Lines" },
+      { name: "Plumbing Tools & Cements" },
+      { name: "Utility Sinks & Faucets" }
+      ,
+      { name: "Augers, Plungers & Drain Openers" }
+    ]
+  }, {
     name: "Smart Home & Security",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: []
+  }, {
     name: "Storage & Organization",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Storage & Organization" }, { name: "Shelves & Shelving" }, { name: "Closet Organization" }, { name: "Garage Organization" }, { name: "Kitchen Organization" }, { name: "Baskets & Storage Containers" }, { name: "Moving Boxes & Supplies" }, { name: "Hooks & Racks" }, { name: "Utility Storage Cabinets" }, { name: "Laundry Organization" }
+      , { name: "Small Parts Organizers" }
+      , { name: "Lockers" }
+    ]
+  }, {
     name: "Tools",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
-    name: "Home Services",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+      { name: "Tools" },
+      { name: "Power Tools" },
+      { name: "Power Tool Accessories" },
+      { name: "Hand Tools" },
+      { name: "Tool Storage & Work Benches" },
+      { name: "Ladders & Scaffolding" },
+      { name: "Air Tools & Compressors" },
+      { name: "Levels & Measuring Tools" },
+      { name: "Shop Vacuums & Accessories" },
+      { name: "Flashlights & Flashlight Bulbs" }
+      ,
+      { name: "Welding & Soldering" }
+      ,
+      { name: "Jobsite Radios" }
+      ,
+      { name: "Home 3D Printers & Filament" }
+      ,
+      { name: "Clothing & Footwear" }
+      ,
+      { name: "Safety Equipment" }
+    ]
+  }, {
     name: "Gift Cards",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+    ]
+  }, {
     name: "Savings",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  },{
+    subCategory: [
+    ]
+  }, {
     name: "Weekly Ad",
-subCategory:[
-      {
-        name :"Subcategory Number 1"
-      },{
-        name :"Subcategory Number 2"
-      },{
-        name :"Subcategory Number 3"
-      },{
-        name :"Subcategory Number 4"
-      },{
-        name :"Subcategory Number 5"
-      },{
-        name :"Subcategory Number 6"
-      },{
-        name :"Subcategory Number 7"
-      },{
-        name :"Subcategory Number 8"
-      },{
-        name :"Subcategory Number 9"
-      },{
-        name :"Subcategory Number 10"
-      },{
-        name :"Subcategory Number 11"
-      },{
-        name :"Subcategory Number 12"
-      },{
-        name :"Subcategory Number 13"
-      },{
-        name :"Subcategory Number 14"
-      }
-    ]  }
+    subCategory: [
+    ]
+  }
 
 
 ];

@@ -45,8 +45,12 @@ class ConnectedMenu extends Component {
   }
 
   toggleSubMenu(...props){
-    this.setState({subMenu: props[0]})
-    this.setState({showSubMenu: true});
+    if(props[0].length > 0){
+      this.setState({subMenu: props[0]})
+      this.setState({showSubMenu: true});
+    }else{
+         this.setState({showSubMenu: false});
+    }
   }
 
   mouseHandler(){
