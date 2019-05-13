@@ -13,7 +13,8 @@
     z-index: 999;
     width: 400px;
     height: 106%;
-    left: 34px;
+    left: 0px;
+	overflow: hidden;
 }
 
 .menuMain {

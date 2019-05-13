@@ -204,79 +204,720 @@ const categories = [
     subCategory:[
       {
         name: "Bathroom Vanities"
+      },{
+        name: "Bathroom Faucets & Shower Heads"
+      },{
+        name: "Toilets & Toilet Seats"
+      },{
+        name: "Bathtubs & Whirlpool Tubs"
+      },{
+        name: "Bathroom Accessories & Hardware"
+      },{
+        name: "Bathroom Storage"
+      },{
+        name: "Bathroom & Pedestal Sinks"
+      },{
+        name: "Bathroom Mirrors"
+      },,{
+        name: "Bathroom Exhaust Fans & Parts"
+      },{
+        name: "Bathroom Safety"
+      },{
+        name: "Bathroom Handles"
+      },{
+        name: "Saunas & Components"
+      },{
+        name: "Commercial Bathroom Components"
+      },{
+        name: "Showers & Shower Doors"
       }
     ]
   },
   {
     name: "Building Supplies",
     icon: "far fa-gem",
-    subCategory:[]
+    subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   },
   {
     name: "Doors & Windows",
     icon: "fas fa-book",
-    subCategory:[]
+    subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   },
   {
     name: "Electrical",
     icon: "fas fa-desktop",
-    subCategory:[]
+    subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   },{
     name: "Flooring",
-    subCategory:[]
+    subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   }
   ,{
     name: "Hardware",
-    subCategory:[]
+    subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   },{
     name: "Heating & Cooling",
-subCategory:[]
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]
   },{
     name: "Home Decor & Furniture",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Kitchen",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Lawn & Garden",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Lighting & Ceiling Fans",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Moulding & Millwork",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Outdoor Living",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Paint",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Plumbing",
-subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Smart Home & Security",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Storage & Organization",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Tools",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Home Services",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Gift Cards",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Savings",
-    subCategory:[]
-  },{
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  },{
     name: "Weekly Ad",
-    subCategory:[]
-  }
+subCategory:[
+      {
+        name :"Subcategory Number 1"
+      },{
+        name :"Subcategory Number 2"
+      },{
+        name :"Subcategory Number 3"
+      },{
+        name :"Subcategory Number 4"
+      },{
+        name :"Subcategory Number 5"
+      },{
+        name :"Subcategory Number 6"
+      },{
+        name :"Subcategory Number 7"
+      },{
+        name :"Subcategory Number 8"
+      },{
+        name :"Subcategory Number 9"
+      },{
+        name :"Subcategory Number 10"
+      },{
+        name :"Subcategory Number 11"
+      },{
+        name :"Subcategory Number 12"
+      },{
+        name :"Subcategory Number 13"
+      },{
+        name :"Subcategory Number 14"
+      }
+    ]  }
 
 
 ];
