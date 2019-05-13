@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./Redux/Store";
 import * as serviceWorker from './serviceWorker';
-import { discount } from './discount';
+// import { discount } from './discount';
 
 let app = (
   <Provider store={store}>
@@ -21,4 +21,4 @@ ReactDOM.render(app, document.getElementById("root"));
 
 serviceWorker.register();
 
-discount()
+// discount()
