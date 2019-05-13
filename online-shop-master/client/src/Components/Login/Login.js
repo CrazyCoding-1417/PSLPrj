@@ -5,6 +5,7 @@ import Auth from "../../Auth";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { setLoggedInUser } from "../../Redux/Actions";
+import TwitterLoginPoc from "./TwitterLoginPoc";
 
 import "./Login.css";
 
@@ -26,7 +27,7 @@ class ConnectedLogin extends Component {
       <div className="login-container">
         <div
           style={{
-            height: 200,
+            height: 300,
             width: 200,
             display: "flex",
             flexDirection: "column"
@@ -84,6 +85,7 @@ class ConnectedLogin extends Component {
           {this.state.wrongCred && (
             <div style={{ color: "red" }}>Wrong username and/or password</div>
           )}
+          <TwitterLoginPoc />
         </div>
       </div>
     );

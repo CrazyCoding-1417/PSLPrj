@@ -18,5 +18,38 @@ Online Store Front implemented using React, Redux, React router, and React Mater
 3. ```npm install```
 4. ```npm start``` ( this will make the application available in the browser)
 
- 
 
+
+## Push Notification & Twitter Login:
+
+1) From online-shop-master folder:
+* Delete ```node_modules``` folder in ```online-shop-master``` and ```online-shop-master/client``` folder
+* ```yarn install``` or ```npm install```
+* ```cd client``` 
+* ```yarn install``` or ```npm install```
+
+2) Get VAPID KEYS:
+* From online-shop-master folder: 
+```./node_modules/.bin/web-push generate-vapid-keys```
+
+3) Update .env file located inside ```online-shop-mater``` by replacing current 
+```PUBLIC_VAPID_KEY``` and
+```PRIVATE_VAPID_KEY``` with newly created VAPID KEYs in step 2).
+
+4) Update PUBLIC_VAPID_KEY inside ```/client/.env``` with newly generated keys in step 2)
+
+
+5) From online-shop-master folder:
+```yarn start``` or ```npm start```
+
+### Push Notification
+
+1) When the site opens in ```http://localhost:3000/``` click to allow notification when the question pops up on the left corner of address bar in browser.
+
+2) The notification should pop up at the right upper corner of screen
+
+## Twitter Login
+
+1) Go to ```http://localhost:3000/login```.
+
+2) ```Sign in with Twitter``` button is located beneath ```Log In``` button. The window asking for Twitter credentials pops up when the button is clicked. 

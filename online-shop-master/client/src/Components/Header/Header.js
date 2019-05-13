@@ -63,7 +63,7 @@ state = {
   render() {
     let { anchorEl } = this.state;
 
-    return ( 
+    return (
       <div>
       <AppBar
         position="static"
@@ -109,7 +109,7 @@ state = {
               aria-label="Cart"
               style={{ position: "absolute", right: 0 }}
               onClick={() => {
-                //this.props.dispatch(showCartDlg(true));
+                this.props.dispatch(showCartDlg(true));
               }}
             >
               <Badge badgeContent={this.props.nrOfItemsInCard} color="primary">
@@ -166,7 +166,6 @@ state = {
           </div> 
             </div>                 
         </Toolbar>     
-
       </div>
     );
   }

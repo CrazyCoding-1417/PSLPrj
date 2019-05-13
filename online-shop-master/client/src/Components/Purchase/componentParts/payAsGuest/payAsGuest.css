@@ -1,0 +1,226 @@
+.payasguess-container{
+  padding: 1em;
+  margin:1em;
+}
+.card.brd-none {
+    border: 1px solid #E5E5E5;
+}
+.card-two{
+  padding: .5em;
+}
+.card {
+    box-sizing: border-box;
+    border-top: 5px solid;
+    background: #FFF;
+}
+.form-group.select label select {
+    width: 100%;
+    color: #000;
+    appearance: none;
+
+}
+.form-group{
+  padding: .5em;
+}
+.form-control {
+    height: 44px;
+    font-size: 14px;
+    font-size: 1rem;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+}
+.card.brd-none {
+    border-top: 1px solid #E5E5E5;
+}
+
+.card .card-body.card-default {
+    padding: 10px;
+}
+.card .card-body {
+    border-left: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.btn.btn-primary.disabled, .btn.btn-primary[disabled], fieldset[disabled] .btn.btn-primary {
+    cursor: not-allowed;
+    color: #999!important;
+    background-color: #E5E5E5;
+    border-color: #E5E5E5!important;
+}
+.btn.btn-block {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn.btn-primary {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #0471AF;
+    white-space: nowrap;
+    font-weight: 400;
+    padding: 0 15px;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    font-size: 14px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: #FFF;
+    background-color: #0471AF;
+}
+.card-btn{
+  width: 250px !important;
+}
+.grid-70 {
+    width: 70%;
+}
+.grid-30 {
+    width: 30%;
+}
+.grid-60 {
+  width: 60%;
+}
+.grid-40 {
+  width: 40%;
+}
+.grid-25 {
+  width:25%;
+}
+select.form-control.selectInp {
+  width: 25%;
+  float: left;
+  margin-right: .5em;
+}
+.expP{
+  font-weight: 700;
+  position: relative;
+  font-family: Helvetica,Arial,sans-serif;
+  margin: 10px 0 0 10px;
+}
+.store-location-container{
+  padding: .5em;
+  border: 1px solid #CCC;
+}
+.store-location-container p{
+  margin:0px;
+  padding: 0px;
+}
+.trench.trench-small {
+    padding: 5px;
+}
+.v-spacing-small {
+    margin-bottom: 10px!important;
+}
+.order-sum-copy {
+    padding-top: 10px;
+}
+a.h4, p.h4, span.h4 {
+    font-size: 18px;
+    font-size: 1.2857142857142858rem;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+.trench.trench-small {
+    padding: 5px;
+}
+.trench {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+.grid-100 {
+    clear: both;
+    width: 100%;
+}
+.btn.btn-add:visited {
+    color: #FFF;
+}
+.btn.btn-block {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn.btn-add {
+    cursor: pointer;
+    background-image: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-size: 1rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #FFF;
+    background-color: #338700;
+}
+.btn.btn-add, .btn.btn-secondary {
+    -webkit-box-sizing: border-box;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0;
+    font-family: Helvetica,Arial,sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    white-space: nowrap;
+    font-weight: 400;
+    padding: 0 15px;
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    line-height: 44px;
+}
+.grid-parent {
+    padding-left: 0;
+    padding-right: 0;
+}
+.cm-grid-100{
+  display: block;
+}
+.cm-grid-60{
+  float:left;
+}
+.cm-grid-40{
+  float:left;
+}
+.v-spacing-medium {
+    margin-bottom: 15px!important;
+        display: inline-block;
+}
+.total-grid{
+  font-weight: 600;
+}
+.order-summary{
+  display: inline-block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.estimate-total{
+  font-size: 1.1em;
+}
+.submitorderblock{
+    border: 1px solid #CCC;
+}
+.fl-left{
+  float: left
+}
