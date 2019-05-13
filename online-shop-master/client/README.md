@@ -18,5 +18,4 @@ Online Store Front implemented using React, Redux, React router, and React Mater
 3. ```npm install```
 4. ```npm start``` ( this will make the application available in the browser)
 
- 
-
+ yarn add react-redux@next
