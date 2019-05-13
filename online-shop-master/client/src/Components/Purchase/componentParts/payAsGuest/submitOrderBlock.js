@@ -1,7 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import './payAsGuest.css'
 
-const submitOrderBlock =()=>{
+
+const submitOrderBlock =(props)=>{
+
+  useEffect(()=>{
+    console.log(props.cartItems)
+  },[])
+
+  const [cartItems, setItems] = useState((state)=> props.cartItems)
+  const [subTotal, setSubTotal] = useState(0);
+  const [tax, setTax] = useState(0);
+  const [grandTotal, setGrandTotal]= useState(0)
+
+  useEffect(()=>{
+    ItemTotal()
+  }, [subTotal, tax, grandTotal])
+
+  const ItemTotal=()=>{
+    if(cartItems.length <= 0){
+      setSubTotal(0);
+      setTax(0);
+      setGrandTotal(0);
+    } else {
+      const price = [];
+      cartItems.map((item)=>{
+        price.push(item.price)
+      })
+      const total = price.reduce((a,b)=> a+b)
+      const taxAmount = total*0.07;
+      const grandAmount = total+taxAmount;
+      setSubTotal(total.toFixed(2));
+      setTax(taxAmount.toFixed(2));
+      setGrandTotal(grandAmount.toFixed(2));
+    }
+  }
+
 
   return(
     <div className=" tablet-grid-40 submitorderblock mobile-grid-100 v-spacing-desktop-large pull-right grid-parent js-position-sticky position-sticky position-top">
@@ -10,7 +45,7 @@ const submitOrderBlock =()=>{
         <div className="v-spacing-small order-summary">
           <div className="order-sum-copy grid-100">
             <span className="cm-grid-60 grid-60">Order Summary</span>
-            <span className="cm-grid-40 grid-40">1 Item</span>
+            <span className="cm-grid-40 grid-40">{cartItems.length} Item</span>
           </div>
         </div>
 
@@ -20,19 +55,19 @@ const submitOrderBlock =()=>{
           <div className="v-spacing-large">
             <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium total-grid">
               <div className="cm-grid-60 grid-60 strong art-co-rp-itemsTotalLbl">Item Total</div>
-              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">$3.00</div>
+              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">${subTotal}</div>
             </div>
 
             <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium">
               <div className="cm-grid-60 grid-60 strong art-co-rp-itemsTotalLbl">Estimated Tax</div>
-              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">$0.24</div>
+              <div className="cm-grid-40 grid-40 align-right strong art-co-rp-itemsTotal">${tax}</div>
             </div>
 
             <hr />
 
             <div className="cm-grid-100 grid-parent grid-100 v-spacing-medium estimate-total">
               <div className="cm-grid-60 grid-60"><h5>Estimated Total</h5></div>
-              <div className="cm-grid-40 grid-40"><h5>$3.24</h5></div>
+              <div className="cm-grid-40 grid-40"><h5>${grandTotal}</h5></div>
             </div>
           </div>
 
@@ -48,8 +83,13 @@ const submitOrderBlock =()=>{
   )
 }
 
-export default submitOrderBlock;
+const mapStateToProps=state=>{
+  return({
+    cartItems: state.cartItems
+  })
+}
 
+export default connect(mapStateToProps)(submitOrderBlock);
 
 //======REACT REDUX 7.0
 //

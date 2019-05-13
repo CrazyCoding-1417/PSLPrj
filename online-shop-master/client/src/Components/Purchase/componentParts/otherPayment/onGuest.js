@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './clickGuest.css'
 import PayPal from './payPal'
-
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 const onGuest = props => {
   const [name, setName] = useState("apple")
@@ -21,9 +22,12 @@ const onGuest = props => {
           </div >
         </div>
         <div className = "grid-align-center v-spacing-jumbo" >
-          <a href = "/checkout/payment"
-            className = "btn btn-add btn-block js-checkout-redirect art-reg-guestCheckoutBtn" > Continue As Guest
-          </a>
+          <span className = "btn btn-add btn-block js-checkout-redirect art-reg-guestCheckoutBtn"
+          onClick={() => {
+            props.history.push("/checkout/payment");
+          }}
+          > Continue As Guest
+          </span>
         </div >
         <div className = "grid-align-center v-spacing-small" >
           <p className = "art-reg-guestCheckoutPayWith" > Or pay with: < /p>
@@ -44,4 +48,4 @@ const onGuest = props => {
   )
 }
 
-export default onGuest;
+export default withRouter(connect()(onGuest));
