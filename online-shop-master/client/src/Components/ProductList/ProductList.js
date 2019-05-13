@@ -12,6 +12,7 @@ import PriceDialog from "../PriceDialog/PriceDialog";
 import Paging from "../Paging/Paging";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
+import Category from "../Category/Category"
 
 const sortOptions = [
   <MenuItem key={"lh"} value={"lh"}>
@@ -205,11 +206,7 @@ class ProductList extends Component {
         <div style={{ flex: 1 }}>
           {this.state.unfinishedTasks !== 0 ? (
             <CircularProgress className="circular" />
-          ) : (
-            this.state.items.map(item => {
-              return <Item key={item.id} item={item} />;
-            })
-          )}
+          ) : <Category pageTitle={this.getPageTitle()} />}
         </div>
         {this.state.unfinishedTasks === 0 && (
           <Paging
