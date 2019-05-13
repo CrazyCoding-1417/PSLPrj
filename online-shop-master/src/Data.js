@@ -146,24 +146,139 @@ const sampleProducts = [
 const categories = [
   {
     name: "Appliances",
-    icon: "fas fa-list"
+    icon: "fas fa-list",
+    subCategory: [
+          {
+            name: "Refrigerators"
+          },
+          {
+            name: "Washers & Dryers"
+          },
+          {
+            name: "Ranges"
+          },
+          {
+            name: "Dishwashers"
+          },
+          {
+            name: "Microwaves"
+          },
+          {
+            name: "Vacuum Cleaners & Floor Care"
+          },
+          {
+            name: "Appliance Parts & Accessories"
+          },
+          {
+            name: "Range Hoods"
+          },
+          {
+            name: "Freezers & Ice Makers"
+          },
+          {
+            name: "Wall Ovens"
+          },
+          {
+            name: "Cooktops"
+          },
+          {
+            name: "Small Appliances"
+          },
+          {
+            name: "Beverage Centers & Wine Chillers"
+          },
+          {
+            name: "Garbage Disposals"
+          },
+          {
+            name: "Trash Compactors"
+          },
+          {
+            name: "Commercial Appliances"
+          }
+        ]
   },
   {
     name: "Bathroom",
-    icon: "fas fa-tshirt"
+    icon: "fas fa-tshirt",
+    subCategory:[
+      {
+        name: "Bathroom Vanities"
+      }
+    ]
   },
   {
     name: "Building Supplies",
-    icon: "far fa-gem"
+    icon: "far fa-gem",
+    subCategory:[]
   },
   {
     name: "Doors & Windows",
-    icon: "fas fa-book"
+    icon: "fas fa-book",
+    subCategory:[]
   },
   {
     name: "Electrical",
-    icon: "fas fa-desktop"
+    icon: "fas fa-desktop",
+    subCategory:[]
+  },{
+    name: "Flooring",
+    subCategory:[]
   }
+  ,{
+    name: "Hardware",
+    subCategory:[]
+  },{
+    name: "Heating & Cooling",
+subCategory:[]
+  },{
+    name: "Home Decor & Furniture",
+subCategory:[]
+  },{
+    name: "Kitchen",
+subCategory:[]
+  },{
+    name: "Lawn & Garden",
+subCategory:[]
+  },{
+    name: "Lighting & Ceiling Fans",
+subCategory:[]
+  },{
+    name: "Moulding & Millwork",
+subCategory:[]
+  },{
+    name: "Outdoor Living",
+subCategory:[]
+  },{
+    name: "Paint",
+subCategory:[]
+  },{
+    name: "Plumbing",
+subCategory:[]
+  },{
+    name: "Smart Home & Security",
+    subCategory:[]
+  },{
+    name: "Storage & Organization",
+    subCategory:[]
+  },{
+    name: "Tools",
+    subCategory:[]
+  },{
+    name: "Home Services",
+    subCategory:[]
+  },{
+    name: "Gift Cards",
+    subCategory:[]
+  },{
+    name: "Savings",
+    subCategory:[]
+  },{
+    name: "Weekly Ad",
+    subCategory:[]
+  }
+
+
 ];
 
 // Generate data for rendering menu on the left.
@@ -174,16 +289,17 @@ const dataForRenderingMenu = ((categories) => {
   ];
 
   let initialLength = menuData.length;
-
+  let iter = 0;
   menuData = menuData.concat(
     categories.map((x, i) => {
+      iter = iter + i;
       return {
         name: x.name,
         url: "/search/?category=" + x.name,
         id: initialLength + i,
         type: "item",
-        parentID: 0
-        //icon: x.icon
+        parentID: 0,
+        subCategory: x.subCategory
       };
     })
   );
