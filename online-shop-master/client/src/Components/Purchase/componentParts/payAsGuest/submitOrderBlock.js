@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from "react-router-dom";
 import './payAsGuest.css'
 
 
@@ -72,7 +73,9 @@ const submitOrderBlock =(props)=>{
           </div>
 
           <div className="grid-100  v-spacing-large">
-            <a className="js-order-submit met-order-submit btn btn-block btn-add art-co-rp-submitOrderBtn cb-hidden" data-blocked="true" data-enable-submit-order="true" href="/checkout/confirmation" data-submittoken="">
+            <a className="js-order-submit met-order-submit btn btn-block btn-add art-co-rp-submitOrderBtn cb-hidden" data-blocked="true" data-enable-submit-order="true" data-submittoken=""
+            onClick={()=> console.log("Purchase successful!")}
+            >
               <i aria-hidden="true" className="icon-secure"></i> submit order
             </a>
           </div>
@@ -89,7 +92,7 @@ const mapStateToProps=state=>{
   })
 }
 
-export default connect(mapStateToProps)(submitOrderBlock);
+export default withRouter(connect(mapStateToProps)(submitOrderBlock));
 
 //======REACT REDUX 7.0
 //

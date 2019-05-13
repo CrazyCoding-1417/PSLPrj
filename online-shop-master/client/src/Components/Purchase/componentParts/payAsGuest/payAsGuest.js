@@ -5,6 +5,8 @@ import ContactInfo from './contactInfo'
 import AddGiftCard from './addGiftCard'
 import SubmitOrderBlock from './submitOrderBlock'
 import "./payAsGuest.css";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 import { Link } from 'react-router-dom'
 
@@ -41,13 +43,20 @@ const payAsGuest =props=>{
       </div>
       <div className="grid-25 payasguess-container fl-left">
         <SubmitOrderBlock />
-        <Link to={'/'}>
-          <p style={{ color: "#0471AF", fontWeight: "bold", marginBottom: 10 }}><b> &lt; Return to cart </b></p>
-        </Link>
+          <p
+            onClick={() => {
+              props.history.push("/");
+            }}
+            style={{
+              color: "#0471AF",
+              fontWeight: "bold",
+              marginBottom: 10 }}>
+            <b>&lt; Return to cart</b>
+          </p>
 
       </div>
     </div>
   )
 }
 
-export default payAsGuest;
+export default withRouter(connect()(payAsGuest));
