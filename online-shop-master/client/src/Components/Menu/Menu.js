@@ -12,7 +12,6 @@ import MenuModal from "./MenuModal";
 
 
 import {
-  showCartDlg,
   toggleMenu,
 } from "../../Redux/Actions";
 
@@ -63,7 +62,7 @@ class ConnectedMenu extends Component {
     if (!this.props.showMenu) return null;
     return (
       <>
-      <MenuMain menuItems={this.props.menuItems} showMenu={this.props.showMenu} showSubMenu={this.state.showSubMenu} menuItems={this.state.menuItems} toggleSubMenu={this.toggleSubMenu} toggleMenu={this.toggleMenu} {...this.props}>
+      <MenuMain  showMenu={this.props.showMenu} showSubMenu={this.state.showSubMenu} menuItems={this.state.menuItems} toggleSubMenu={this.toggleSubMenu} toggleMenu={this.toggleMenu} {...this.props}>
         <SubMenu showSubMenu={this.state.showSubMenu} subMenu={this.state.subMenu}/>
       </MenuMain>
       <MenuModal {...this.props} onMouseEnter={this.mouseHandler} showSubMenu={this.state.showSubMenu} />
