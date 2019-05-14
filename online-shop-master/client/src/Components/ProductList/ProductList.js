@@ -12,6 +12,7 @@ import PriceDialog from "../PriceDialog/PriceDialog";
 import Paging from "../Paging/Paging";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
+import Category from "../Category/Category"
 
 const sortOptions = [
   <MenuItem key={"lh"} value={"lh"}>
@@ -210,6 +211,7 @@ class ProductList extends Component {
               return <Item key={item.id} item={item} />;
             })
           )}
+          <Category pageTitle={this.getPageTitle()} />
         </div>
         {this.state.unfinishedTasks === 0 && (
           <Paging

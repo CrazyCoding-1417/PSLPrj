@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Header.css";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+
 import Badge from "@material-ui/core/Badge";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -25,10 +25,14 @@ import Select from "@material-ui/core/Select";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
+import MenuButton from "../Menu/MenuButton";
+
+
 const mapStateToProps = state => {
   return {
     nrOfItemsInCard: state.cartItems.length,
-    loggedInUser: state.loggedInUser
+    loggedInUser: state.loggedInUser,
+    showMenu: state.showMenu
   };
 };
 
@@ -41,11 +45,20 @@ const categoryOptions = categories.map(x => {
 });
 
 class ConnectedHeader extends Component {
-  state = {
-    searchTerm: "",
-    anchorEl: null,
-    categoryFilter: categories[0].name
-  };
+  constructor(props){
+    super(props);
+    
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu(){
+    this.props.dispatch(toggleMenu());
+  }
+state = {
+      searchTerm: "",
+      anchorEl: null,
+      categoryFilter: categories[0].name
+    };
 
   render() {
     let { anchorEl } = this.state;
@@ -59,18 +72,16 @@ class ConnectedHeader extends Component {
         <div className="col-centered" style={{ backgroundColor:"#004890", color:"white", height: 30}}>
         {/* <a href="" margin="5" textAlign="center"/> */}
           <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
-        </div>
-        <Toolbar style={{ height: "100%" }}>
-          <div className="left-part">
-            <a href="/">
-              <img
-                src={cartImage}
-                alt={"Logo"}
-                style={{ marginLeft: 10 }}
-                width="150"
-                height="150"
-              />
-            </a>
+        </div> 
+        <Toolbar style={{ height: "100%" }} className="container">             
+          <div className="left-part">            
+            <img
+              src={cartImage}
+              alt={"Logo"}
+              style={{ marginLeft: 10 }}
+              width="150"
+              height="150"
+            />            
           </div>
           <div className="right-part">
             {!this.props.loggedInUser ? (
@@ -104,53 +115,14 @@ class ConnectedHeader extends Component {
               <Badge badgeContent={this.props.nrOfItemsInCard} color="primary">
                 <ShoppingCartIcon />
               </Badge>
-            </IconButton>
-          </div>
-        </Toolbar>
-      </AppBar>
-          <Toolbar style={{ backgroundColor:"#004890", color:"white", height: 30}}>
-            <div className="left-part" >
-            <IconButton style={{color:"white"}}
-              onClick={() => {
-                this.props.dispatch(toggleMenu());
-              }}
-              /* onMouseLeave={() => {
-                this.props.dispatch(toggleMenu());
-              }} */
-            >
-              <MenuIcon size="medium" style={{color:"white"}}/>
-              <p>Departments</p>
-              <Menu
-              open={Boolean(anchorEl)}
-              anchorEl={anchorEl}
-              //open={false}
-              onClose={() => {
-                this.setState({ anchorEl: null });
-              }}
-            >
-              {/* <MenuItem
-                onClick={() => {
-                  this.setState({ anchorEl: null });
-                  this.props.history.push("/order");
-                }}
-              > */}
-                {/* Pending Order */}
-              {/* </MenuItem> */}
-              <MenuItem
-                onClick={() => {
-                  Auth.signout(() => {
-                    this.props.dispatch(setCheckedOutItems([]));
-                    this.props.dispatch(setLoggedInUser(null));
-                    this.props.history.push("/");
-                  });
-                  this.setState({ anchorEl: null });
-                }}
-              >
-                {/* Logout */}
-              </MenuItem>
-            </Menu>
-            </IconButton>
-            <div backgroundcolor="white">
+            </IconButton>            
+          </div>             
+        </Toolbar>        
+      </AppBar>      
+          <Toolbar style={{ backgroundColor:"#0471af", color:"white", height: 30}}>
+            <div className="left-part left-part--search-menu-bar" >            
+              < MenuButton onMouseEnter={this.toggleMenu}/>
+            <div backgroundcolor="white" className=" search-input__container">
               <input type="text" placeholder="What are you looking for today?"
               // label="Search products"
               value={this.state.searchTerm}
@@ -191,9 +163,9 @@ class ConnectedHeader extends Component {
             <img src = "/Images/SearchIcon.jpg" height="22" width="22"/>
             {/* {" "} Search */}
             </Button>
-          </div>
-            </div>
-        </Toolbar>
+          </div> 
+            </div>                 
+        </Toolbar>     
       </div>
     );
   }
