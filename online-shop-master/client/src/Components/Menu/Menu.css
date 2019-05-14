@@ -1,7 +1,9 @@
 :root{
   --background-color: #f2f2f2;
 }
-
+button.MuiButtonBase-root-67.MuiIconButton-root-70.menu-button{
+	border-radius: 0px;
+}
 .menu-button__text{
     color: white;
 	margin: 0px;
@@ -15,6 +17,7 @@
     height: 106%;
     left: 0px;
 	overflow: hidden;
+	display: flex;
 }
 
 .menuMain {
@@ -23,7 +26,7 @@
 	overflow-y: auto;
 	background-color: #FAFAFB;
 	padding-top:10px;
-	position: absolute;
+	position: relative;
 	z-index: 999;
 }
 
@@ -36,9 +39,6 @@
 	cursor:pointer;
  }
 
- .menu-list{
-    position:absolute;
-}
 
 .menu-modal{
 	width: 100%;
@@ -51,8 +51,7 @@
 }
 
 .slide{
-	position: absolute;
-	left: 200px;
+	position: relative;
 	width: 50%;
 	top:0px;
 	height: 100%;
