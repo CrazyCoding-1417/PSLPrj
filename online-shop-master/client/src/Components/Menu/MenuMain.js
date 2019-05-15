@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Grow from '@material-ui/core/Grow'
 import { NavLink } from "react-router-dom";
 import queryString from "query-string";
@@ -56,11 +56,11 @@ export default function MenuMain(...props) {
                   <div className="menuItem" 
                   onMouseEnter={(event)=>{
                     const cat = event.currentTarget.parentElement.title;
-                    const m = props[0].menuItems.filter((x)=>{
+                    const m = props[0].menuItems.filter = (x) => {
                         if(x.name === cat){
                           return x.subCategory
                         }
-                    });
+                    };
                     props[0].toggleSubMenu(m[0].subCategory);
                  
                   }}

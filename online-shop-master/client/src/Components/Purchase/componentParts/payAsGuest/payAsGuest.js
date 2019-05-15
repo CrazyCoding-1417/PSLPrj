@@ -8,7 +8,6 @@ import "./payAsGuest.css";
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
-
 const payAsGuest =props=>{
   const [activeGiftCard, setActiveGiftCard] = useState(false);
 

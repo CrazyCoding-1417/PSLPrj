@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const banner = (props) =>{
-  const [adsBanner, setAdsBanner] = useState([
+  const [adsBanner] = useState([
     {
       img: "https://lda.lowes.com/is/image/Lowes/PromoTeam_Promo_DP18-113322_SelectVanities_150?scl=1&201905021454",
       link: "https://www.lowes.com/c/Bathroom",
