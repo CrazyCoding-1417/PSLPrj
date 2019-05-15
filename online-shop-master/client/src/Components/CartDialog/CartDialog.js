@@ -18,16 +18,15 @@ const mapStateToProps = state => {
   return { open: state.showCartDialog, items: state.cartItems };
 };
 
-class ConnectedCartDialog extends Component {
-  render() {
-    let totalPrice = this.props.items.reduce((accumulator, item) => {
+const ConnectedCartDialog = props => {
+    let totalPrice = props.items.reduce((accumulator, item) => {
       return accumulator + item.price * item.quantity;
     }, 0);
 
     return (
       <div>
         <Dialog
-          open={this.props.open}
+          open={props.open}
           onClose={() => {
             this.props.dispatch(showCartDlg(false));
           }}
@@ -60,8 +59,8 @@ class ConnectedCartDialog extends Component {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {this.props.items.map((item, index) => {
-                  return <CartRow item={item} key={item.id} {...this.props} />;
+                {props.items.map((item, index) => {
+                  return <CartRow item={item} key={item.id} {...props} />;
                 })}
               </TableBody>
             </Table>
@@ -78,7 +77,7 @@ class ConnectedCartDialog extends Component {
               }}
             >
               {" "}
-              Total Price: {totalPrice} $
+              Total Price: $ {totalPrice}
             </div>
             <Button
               style={{ float: "right", margin: 20 }}
@@ -86,9 +85,9 @@ class ConnectedCartDialog extends Component {
               color="primary"
               disabled={totalPrice === 0}
               onClick={() => {
-                this.props.dispatch(showCartDlg(false));
-                this.props.dispatch(setCheckedOutItems(this.props.items));
-                this.props.history.push("/purchase");
+                props.dispatch(showCartDlg(false));
+                props.dispatch(setCheckedOutItems(props.items));
+                props.history.push("/purchase");
               }}
             >
               Checkout
@@ -97,7 +96,6 @@ class ConnectedCartDialog extends Component {
         </Dialog>
       </div>
     );
-  }
 }
 const CartDialog = withRouter(connect(mapStateToProps)(ConnectedCartDialog));
 export default CartDialog;
