@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Slide from '@material-ui/core/Slide';
 import { NavLink } from "react-router-dom";
 

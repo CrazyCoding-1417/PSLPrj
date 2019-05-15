@@ -4,29 +4,21 @@ import "./Header.css";
 import IconButton from "@material-ui/core/IconButton";
 
 import Badge from "@material-ui/core/Badge";
-import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import {
   showCartDlg,
-  toggleMenu,
-  setLoggedInUser,
-  setCheckedOutItems
+  toggleMenu
 } from "../../Redux/Actions";
 import cartImage from "../../Images/LowesLogo_DT.svg";
-import Auth from "../../Auth";
 import { categories } from "../../Data";
 import Person from "@material-ui/icons/PersonOutline";
 import Avatar from "@material-ui/core/Avatar";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
 import MenuButton from "../Menu/MenuButton";
-
 
 const mapStateToProps = state => {
   return {
@@ -35,15 +27,6 @@ const mapStateToProps = state => {
     showMenu: state.showMenu
   };
 };
-
-const categoryOptions = categories.map(x => {
-  return (
-    <MenuItem key={x.name} value={x.name}>
-      {x.name}
-    </MenuItem>
-  );
-});
-
 class ConnectedHeader extends Component {
   constructor(props){
     super(props);
@@ -54,15 +37,14 @@ class ConnectedHeader extends Component {
   toggleMenu(){
     this.props.dispatch(toggleMenu());
   }
-state = {
+  
+  state = {
       searchTerm: "",
       anchorEl: null,
       categoryFilter: categories[0].name
-    };
+  };
 
   render() {
-    let { anchorEl } = this.state;
-
     return (
       <div>
       <AppBar
@@ -160,7 +142,7 @@ state = {
                 );
               }}
             >
-            <img src = "/Images/SearchIcon.jpg" height="22" width="22"/>
+            <img src = "/Images/SearchIcon.jpg" height="22" width="22" alt="search icon"/>
             {/* {" "} Search */}
             </Button>
           </div> 

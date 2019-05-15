@@ -22,7 +22,7 @@ const PayPalButton = (props) => {
   }
 
   return (
-    <div style={{marginTop: '10' + 'px'}}>
+    <div style={{marginTop: '10px'}}>
       <PaypalExpressBtn
       client={client}
       currency={currency}

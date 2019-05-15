@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import MenuIcon from "@material-ui/icons/Menu";
-import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 

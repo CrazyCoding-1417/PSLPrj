@@ -3,9 +3,9 @@ import TwitterLogin from 'react-twitter-auth';
 
 function TwitterLoginPoc() {
 
-  const [isAuthenticated, setAuthenticated] = useState(false);
-  const [user, setUser] = useState(null);
-  const [token, setToken] = useState('');
+  const [ setAuthenticated ] = useState(false);
+  const [ setUser ] = useState(null);
+  const [ setToken ] = useState('');
 
   const onSuccess = (response) => {
     const token = response.header.get('x-auth-token');
@@ -21,12 +21,6 @@ function TwitterLoginPoc() {
   const onFailed = (error) => {
     alert(error);
   }
-
-  const logout = () => {
-    setAuthenticated(false);
-    setToken('');
-    setUser(null);
-  };
 
 return (
   !setAuthenticated ?
