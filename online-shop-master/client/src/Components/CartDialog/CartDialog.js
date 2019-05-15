@@ -78,7 +78,7 @@ class ConnectedCartDialog extends Component {
               }}
             >
               {" "}
-              Total Price: {totalPrice} $
+              Total Price: ${totalPrice}
             </div>
             <Button
               style={{ float: "right", margin: 20 }}
