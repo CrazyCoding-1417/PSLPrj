@@ -30,7 +30,7 @@ const mapStateToProps = state => {
 class ConnectedMenu extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       menuItems:dataForRenderingMenu,
       subMenu:[]

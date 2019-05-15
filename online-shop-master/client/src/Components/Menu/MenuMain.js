@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import queryString from "query-string";
 
 export default function MenuMain(...props) {
-    return (
-       <Grow in={props[0].showMenu}>
+  return (
+    <Grow in={props[0].showMenu}>
       <div 
         className="menuMain__container" 
         onMouseLeave={()=>{
@@ -25,12 +25,11 @@ export default function MenuMain(...props) {
           .map((x, i) => {
             if (x.type === "item") {
               return (
-
                 <NavLink
                   to={x.url}
                   exact
                   isActive={(_, location) => {
-                
+
                     // If there is a query string, we have some manual way to decide which menu item is active.
                     if (location.search) {
                       let categoryFromQS = queryString.parse(location.search)
@@ -54,30 +53,26 @@ export default function MenuMain(...props) {
                   }}
                 >
                   <div className="menuItem" 
-                  onMouseEnter={(event)=>{
+                    onMouseEnter={(event)=>{
                     const cat = event.currentTarget.parentElement.title;
                     const m = props[0].menuItems.filter((x)=>{
-                        if(x.name === cat){
-                          return x.subCategory
-                        }
+                      if(x.name === cat){
+                        return x.subCategory
+                      }
                     });
                     props[0].toggleSubMenu(m[0].subCategory);
-                 
                   }}
                   >
-                    {x.name}
+                  {x.name}
                   </div>
-               
                 </NavLink>
-             );
-            } 
-
-            return null;
-          })}
- 
+               );
+              }
+              return null;
+            })}
+        </div>
+        {props[0].children}
       </div>
-      {props[0].children}
-      </div>
-      </Grow>
-    );
+    </Grow>
+  );
 };
