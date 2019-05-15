@@ -63,7 +63,7 @@ class ConnectedOrder extends Component {
           variant="outlined"
           disabled={totalPrice === 0}
           onClick={() => {
-            console.log("purchased");
+            this.props.history.push('/purchase');
           }}
           style={{ margin: 5, marginTop: 30 }}
         >

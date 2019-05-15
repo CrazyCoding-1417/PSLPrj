@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './signUpPage.css';
 import MailMyCard from './mailMyCard'
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 
 const signUpPage = props =>{
 
@@ -191,7 +193,9 @@ const signUpPage = props =>{
           <div className="grid-33 prefix-33 suffix-33 tablet-grid-50 tablet-prefix-25 tablet-suffix-25">
             <button
               className="btn btn-block btn-primary js-register-submit met-create-account art-signIn-createAccount-btn"
-              onClick={()=> console.log(myLowesForm)}>
+              onClick={()=> {
+                props.history.push("/checkout/payment")
+                console.log(myLowesForm)}}>
               CREATE ACCOUNT
             </button>
           </div>
@@ -210,4 +214,4 @@ const signUpPage = props =>{
   )
 }
 
-export default signUpPage;
+export default withRouter(connect()(signUpPage));

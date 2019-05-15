@@ -30,7 +30,7 @@ class App extends Component {
               <Route path="/login" component={Login} />
               <Route path="/purchase" component={Purchase} />
               <Route path="/checkout/payment" component={CheckoutPayment} />
-              <ProtectedRoute path="/order" component={Order} />
+              <Route path="/order" component={Order} />
               <Route
                 component={() => (
                   <div style={{ padding: 20 }}>Page not found</div>

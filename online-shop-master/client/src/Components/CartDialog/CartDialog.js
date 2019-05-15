@@ -88,7 +88,7 @@ class ConnectedCartDialog extends Component {
               onClick={() => {
                 this.props.dispatch(showCartDlg(false));
                 this.props.dispatch(setCheckedOutItems(this.props.items));
-                this.props.history.push("/purchase");
+                this.props.history.push("/order");
               }}
             >
               Checkout

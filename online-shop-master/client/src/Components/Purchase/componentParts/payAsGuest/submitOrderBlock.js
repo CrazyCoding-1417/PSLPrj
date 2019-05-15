@@ -6,11 +6,8 @@ import './payAsGuest.css'
 
 const submitOrderBlock =(props)=>{
 
-  useEffect(()=>{
-    console.log(props.cartItems)
-  },[])
 
-  const [cartItems, setItems] = useState((state)=> props.cartItems)
+  const [cartItems] = useState((state)=> props.cartItems)
   const [subTotal, setSubTotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [grandTotal, setGrandTotal]= useState(0)
