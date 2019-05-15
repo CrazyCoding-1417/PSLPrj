@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Grow from '@material-ui/core/Grow'
 import { NavLink } from "react-router-dom";
 import queryString from "query-string";
 
 export default function MenuMain(...props) {
-  return (
-    <Grow in={props[0].showMenu}>
-      <div 
-        className="menuMain__container" 
+    return (
+       <Grow in={props[0].showMenu}>
+      <div
+        className="menuMain__container"
         onMouseLeave={()=>{
         if(props[0].showSubMenu){
           return false
@@ -25,6 +25,7 @@ export default function MenuMain(...props) {
           .map((x, i) => {
             if (x.type === "item") {
               return (
+
                 <NavLink
                   to={x.url}
                   exact
@@ -52,27 +53,31 @@ export default function MenuMain(...props) {
                     color: "#4282ad"
                   }}
                 >
-                  <div className="menuItem" 
-                    onMouseEnter={(event)=>{
+                  <div className="menuItem"
+                  onMouseEnter={(event)=>{
                     const cat = event.currentTarget.parentElement.title;
                     const m = props[0].menuItems.filter((x)=>{
-                      if(x.name === cat){
-                        return x.subCategory
-                      }
+                        if(x.name === cat){
+                          return x.subCategory
+                        }
                     });
                     props[0].toggleSubMenu(m[0].subCategory);
+
                   }}
                   >
-                  {x.name}
+                    {x.name}
                   </div>
+
                 </NavLink>
-               );
-              }
-              return null;
-            })}
-        </div>
-        {props[0].children}
+             );
+            }
+
+            return null;
+          })}
+
       </div>
-    </Grow>
-  );
+      {props[0].children}
+      </div>
+      </Grow>
+    );
 };

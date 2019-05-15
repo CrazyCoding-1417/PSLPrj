@@ -148,89 +148,42 @@ const categories = [
     name: "Appliances",
     icon: "fas fa-list",
     subCategory: [
-      {
-        name: "Refrigerators"
-      },
-      {
-        name: "Washers & Dryers"
-      },
-      {
-        name: "Ranges"
-      },
-      {
-        name: "Dishwashers"
-      },
-      {
-        name: "Microwaves"
-      },
-      {
-        name: "Vacuum Cleaners & Floor Care"
-      },
-      {
-        name: "Appliance Parts & Accessories"
-      },
-      {
-        name: "Range Hoods"
-      },
-      {
-        name: "Freezers & Ice Makers"
-      },
-      {
-        name: "Wall Ovens"
-      },
-      {
-        name: "Cooktops"
-      },
-      {
-        name: "Small Appliances"
-      },
-      {
-        name: "Beverage Centers & Wine Chillers"
-      },
-      {
-        name: "Garbage Disposals"
-      },
-      {
-        name: "Trash Compactors"
-      },
-      {
-        name: "Commercial Appliances"
-      }
+      { name: "Refrigerators" },
+      { name: "Washers & Dryers" },
+      { name: "Ranges" },
+      { name: "Dishwashers" },
+      { name: "Microwaves" },
+      { name: "Vacuum Cleaners & Floor Care" },
+      { name: "Appliance Parts & Accessories" },
+      { name: "Range Hoods" },
+      { name: "Freezers & Ice Makers" },
+      { name: "Wall Ovens" },
+      { name: "Cooktops" },
+      { name: "Small Appliances" },
+      { name: "Beverage Centers & Wine Chillers" },
+      { name: "Garbage Disposals" },
+      { name: "Trash Compactors" },
+      { name: "Commercial Appliances" }
     ]
   },
   {
     name: "Bathroom",
     icon: "fas fa-tshirt",
     subCategory: [
-      {
-        name: "Bathroom Vanities"
-      }, {
-        name: "Bathroom Faucets & Shower Heads"
-      }, {
-        name: "Toilets & Toilet Seats"
-      }, {
-        name: "Bathtubs & Whirlpool Tubs"
-      }, {
-        name: "Bathroom Accessories & Hardware"
-      }, {
-        name: "Bathroom Storage"
-      }, {
-        name: "Bathroom & Pedestal Sinks"
-      }, {
-        name: "Bathroom Mirrors"
-      }, , {
-        name: "Bathroom Exhaust Fans & Parts"
-      }, {
-        name: "Bathroom Safety"
-      }, {
-        name: "Bathroom Handles"
-      }, {
-        name: "Saunas & Components"
-      }, {
-        name: "Commercial Bathroom Components"
-      }, {
-        name: "Showers & Shower Doors"
-      }
+      { name: "Bathroom Vanities"},
+      { name: "Bathroom Faucets & Shower Heads"},
+      { name: "Toilets & Toilet Seats"},
+      { name: "Bathtubs & Whirlpool Tubs"},
+      { name: "Bathroom Accessories & Hardware"},
+      { name: "Bathroom Storage"},
+      { name: "Bathroom & Pedestal Sinks"},
+      { name: "Bathroom Mirrors"},
+      { name: "Bathroom Exhaust Fans & Parts"},
+      { name: "Bathroom Safety"},
+      { name: "Bathroom Handles"},
+      { name: "Saunas & Components"},
+      { name: "Commercial Bathroom Components"},
+      { name: "Showers & Shower Doors"}
     ]
   },
   {
@@ -247,20 +200,13 @@ const categories = [
       { name: "Insulation & Accessories" },
       { name: "Stairs & Railings" },
       { name: "Drywall" },
-      { name: "Ventilation" }
-      ,
-      { name: "Ceilings" }
-      ,
-      { name: "Gutters & Accessories" }
-      ,
-      { name: "Asphalt Repair & Tools" }
-      ,
-      { name: "Glass & Acrylic" }
-      ,
-      { name: "Erosion Control" }
-      ,
-      { name: "Columns & Accessories" }
-      ,
+      { name: "Ventilation" },
+      { name: "Ceilings" },
+      { name: "Gutters & Accessories" },
+      { name: "Asphalt Repair & Tools" },
+      { name: "Glass & Acrylic" },
+      { name: "Erosion Control" },
+      { name: "Columns & Accessories" },
       { name: "Shop All Building Supplies" }
     ]
   },
@@ -277,8 +223,7 @@ const categories = [
       { name: "Awnings & Accessories" },
       { name: "Weatherstripping" },
       { name: "Replacement Screens" },
-      { name: "Hurricane Shutter Panels" }
-      ,
+      { name: "Hurricane Shutter Panels" },
       { name: "Screen Tools" }
     ]
   },
@@ -295,22 +240,14 @@ const categories = [
       { name: "Cords & Surge Protectors" },
       { name: "Home Automation & Security" },
       { name: "Conduit & Conduit Fittings" },
-      { name: "Electrical Outlets & Adapters" }
-      ,
-      { name: "Electrical Testers & Tools" }
-      ,
-      { name: "Cable & Wire Connectors" }
-      ,
-      { name: "Home Audio & Video" }
-      ,
-      { name: "Doorbells" }
-      ,
-      { name: "Smoke, Carbon Monoxide & Radon Detectors" }
-      ,
-      { name: "Generators" }
-      ,
-      { name: "Batteries" }
-      ,
+      { name: "Electrical Outlets & Adapters" },
+      { name: "Electrical Testers & Tools" },
+      { name: "Cable & Wire Connectors" },
+      { name: "Home Audio & Video" },
+      { name: "Doorbells" },
+      { name: "Smoke, Carbon Monoxide & Radon Detectors" },
+      { name: "Generators" },
+      { name: "Batteries" },
       { name: "Shop All Electrical" }
     ]
   }, {
@@ -325,23 +262,17 @@ const categories = [
       { name: "Carpet & Carpet Tile" },
       { name: "Grout & Mortar" },
       { name: "Flooring Underlayment" },
-      { name: "Surface Preparation" }
-      ,
-      { name: "Wall Base" }
-      ,
-      { name: "Multipurpose Flooring" }
-      ,
-      { name: "Underfloor Heating" }
-      ,
-      { name: "Garage Flooring" }
-      ,
+      { name: "Surface Preparation" },
+      { name: "Wall Base" },
+      { name: "Multipurpose Flooring" },
+      { name: "Underfloor Heating" },
+      { name: "Garage Flooring" },
       { name: "Attic Flooring Panels" }
     ]
   }
   , {
     name: "Hardware",
     subCategory: [
-      ,
       { name: "Hardware" },
       { name: "Door Hardware" },
       { name: "Fasteners" },
@@ -351,22 +282,14 @@ const categories = [
       { name: "Mailboxes & Mailbox Posts" },
       { name: "Furniture Hardware" },
       { name: "Signs, Letters & Numbers" },
-      { name: "Gate Hardware" }
-      ,
-      { name: "Safes" }
-      ,
-      { name: "Window Hardware" }
-      ,
-      { name: "Keys & Key Safes" }
-      ,
-      { name: "Picture Hangers" }
-      ,
-      { name: "Specialty Hardware" }
-      ,
-      { name: "Locks" }
-      ,
-      { name: "Hardware Lubricants" }
-      ,
+      { name: "Gate Hardware" },
+      { name: "Safes" },
+      { name: "Window Hardware" },
+      { name: "Keys & Key Safes" },
+      { name: "Picture Hangers" },
+      { name: "Specialty Hardware" },
+      { name: "Locks" },
+      { name: "Hardware Lubricants" },
       { name: "Shop All Hardware" }
     ]
   }, {
@@ -381,12 +304,9 @@ const categories = [
       { name: "HVAC Duct & Fittings" },
       { name: "Humidifiers & Dehumidifiers" },
       { name: "Thermostats" },
-      { name: "Air Purifiers & Accessories" }
-      ,
-      { name: "Furnaces & Furnace Accessories" }
-      ,
-      { name: "Heat Pumps" }
-      ,
+      { name: "Air Purifiers & Accessories" },
+      { name: "Furnaces & Furnace Accessories" },
+      { name: "Heat Pumps" },
       { name: "Radiator Covers" }
     ]
   }, {
@@ -426,22 +346,14 @@ const categories = [
       { name: "Lawn & Garden Hand Tools" },
       { name: "Fertilizer" },
       { name: "Weed Killers & Preventers" },
-      { name: "Trimmers & Edgers" }
-      ,
-      { name: "Fencing & Gates" }
-      ,
-      { name: "Landscaping" }
-      ,
-      { name: "Plants, Bulbs & Seeds" }
-      ,
-      { name: "Planters, Stands & Window Boxes" }
-      ,
-      { name: "Grills & Outdoor Cooking" }
-      ,
-      { name: "Outdoor Tools & Equipment" }
-      ,
-      { name: "Insect & Pest Control" }
-      ,
+      { name: "Trimmers & Edgers" },
+      { name: "Fencing & Gates" },
+      { name: "Landscaping" },
+      { name: "Plants, Bulbs & Seeds" },
+      { name: "Planters, Stands & Window Boxes" },
+      { name: "Grills & Outdoor Cooking" },
+      { name: "Outdoor Tools & Equipment" },
+      { name: "Insect & Pest Control" },
       { name: "Shop All " }
     ]
   }, {
@@ -456,22 +368,14 @@ const categories = [
       { name: "Light Bulbs" },
       { name: "Chandeliers" },
       { name: "Lamps & Lamp Shades" },
-      { name: "Lighting Parts & Accessories" }
-      ,
-      { name: "Commercial Lighting" }
-      ,
-      { name: "Recessed Lighting" }
-      ,
-      { name: "Under Cabinet Lighting" }
-      ,
-      { name: "Track Lighting" }
-      ,
-      { name: "Kitchen Island Lighting" }
-      ,
-      { name: "Novelty Lighting" }
-      ,
-      { name: "Night Lights" }
-      ,
+      { name: "Lighting Parts & Accessories" },
+      { name: "Commercial Lighting" },
+      { name: "Recessed Lighting" },
+      { name: "Under Cabinet Lighting" },
+      { name: "Track Lighting" },
+      { name: "Kitchen Island Lighting" },
+      { name: "Novelty Lighting" },
+      { name: "Night Lights" },
       { name: "Pool Table Lighting" }
     ]
   }, {
@@ -494,22 +398,14 @@ const categories = [
       { name: "Fencing & Gates" },
       { name: "Outdoor Lighting" },
       { name: "Pavers & Retaining Walls" },
-      { name: "Lawn Mowers" }
-      ,
-      { name: "Pressure Washers" }
-      ,
-      { name: "Decking & Porches" }
-      ,
-      { name: "Landscaping" }
-      ,
-      { name: "Playsets" }
-      ,
-      { name: "Sheds & Outdoor Storage" }
-      ,
-      { name: "Garden Center" }
-      ,
-      { name: "Pools" }
-      ,
+      { name: "Lawn Mowers" },
+      { name: "Pressure Washers" },
+      { name: "Decking & Porches" },
+      { name: "Landscaping" },
+      { name: "Playsets" },
+      { name: "Sheds & Outdoor Storage" },
+      { name: "Garden Center" },
+      { name: "Pools" },
       { name: "Garden Décor" }
     ]
   }, {
@@ -524,12 +420,9 @@ const categories = [
       { name: "Caulking" },
       { name: "Interior Stains & Finishes" },
       { name: "Spray Paint & Accessories" },
-      { name: "Patching & Repair" }
-      ,
-      { name: "Cleaners & Chemicals" }
-      ,
-      { name: "Rubberized Coatings" }
-      ,
+      { name: "Patching & Repair" },
+      { name: "Cleaners & Chemicals" },
+      { name: "Rubberized Coatings" },
       { name: "Resurfacing Kits" }
     ]
   }, {
@@ -544,8 +437,7 @@ const categories = [
       { name: "Water Filtration & Water Softeners" },
       { name: "Supply Lines" },
       { name: "Plumbing Tools & Cements" },
-      { name: "Utility Sinks & Faucets" }
-      ,
+      { name: "Utility Sinks & Faucets" },
       { name: "Augers, Plungers & Drain Openers" }
     ]
   }, {
@@ -554,9 +446,18 @@ const categories = [
   }, {
     name: "Storage & Organization",
     subCategory: [
-      { name: "Storage & Organization" }, { name: "Shelves & Shelving" }, { name: "Closet Organization" }, { name: "Garage Organization" }, { name: "Kitchen Organization" }, { name: "Baskets & Storage Containers" }, { name: "Moving Boxes & Supplies" }, { name: "Hooks & Racks" }, { name: "Utility Storage Cabinets" }, { name: "Laundry Organization" }
-      , { name: "Small Parts Organizers" }
-      , { name: "Lockers" }
+      { name: "Storage & Organization" },
+      { name: "Shelves & Shelving" },
+      { name: "Closet Organization" },
+      { name: "Garage Organization" },
+      { name: "Kitchen Organization" },
+      { name: "Baskets & Storage Containers" },
+      { name: "Moving Boxes & Supplies" },
+      { name: "Hooks & Racks" },
+      { name: "Utility Storage Cabinets" },
+      { name: "Laundry Organization" },
+      { name: "Small Parts Organizers" },
+      { name: "Lockers" }
     ]
   }, {
     name: "Tools",
@@ -570,33 +471,23 @@ const categories = [
       { name: "Air Tools & Compressors" },
       { name: "Levels & Measuring Tools" },
       { name: "Shop Vacuums & Accessories" },
-      { name: "Flashlights & Flashlight Bulbs" }
-      ,
-      { name: "Welding & Soldering" }
-      ,
-      { name: "Jobsite Radios" }
-      ,
-      { name: "Home 3D Printers & Filament" }
-      ,
-      { name: "Clothing & Footwear" }
-      ,
+      { name: "Flashlights & Flashlight Bulbs" },
+      { name: "Welding & Soldering" },
+      { name: "Jobsite Radios" },
+      { name: "Home 3D Printers & Filament" },
+      { name: "Clothing & Footwear" },
       { name: "Safety Equipment" }
     ]
   }, {
     name: "Gift Cards",
-    subCategory: [
-    ]
+    subCategory: []
   }, {
     name: "Savings",
-    subCategory: [
-    ]
+    subCategory: []
   }, {
     name: "Weekly Ad",
-    subCategory: [
-    ]
+    subCategory: []
   }
-
-
 ];
 
 // Generate data for rendering menu on the left.

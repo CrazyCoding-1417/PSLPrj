@@ -13,6 +13,7 @@ import Footer from "./Components/Footer/Footer";
 import Purchase from "./Components/Purchase/PurchaseIndex";
 import CheckoutPayment from "./Components/Purchase/componentParts/payAsGuest/payAsGuest"
 
+
 function App() {
   return (
     <div className="app">

@@ -6,18 +6,36 @@ import './payAsGuest.css'
 
 const submitOrderBlock =(props)=>{
 
-  useEffect(()=>{
-    console.log(props.cartItems)
-  },[])
 
-  const [cartItems, setItems] = useState((state)=> props.cartItems)
+  const [cartItems, setCartItems] = useState((state)=> props.cartItems)
   const [subTotal, setSubTotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [grandTotal, setGrandTotal]= useState(0)
 
+
   useEffect(()=>{
     ItemTotal()
   }, [subTotal, tax, grandTotal])
+
+  // const ItemTotal=()=>{
+  //   if(cartItems.length <= 0){
+  //     setSubTotal(0);
+  //     setTax(0);
+  //     setGrandTotal(0);
+  //   } else {
+  //     const price = [];
+  //     cartItems.map=(item)=>{
+  //       price.push(item.price)
+  //     };
+  //     const total = price.reduce((a,b)=> a+b)
+  //     const taxAmount = total*0.07;
+  //     const grandAmount = total+taxAmount;
+  //     setSubTotal(total.toFixed(2));
+  //     setTax(taxAmount.toFixed(2));
+  //     setGrandTotal(grandAmount.toFixed(2));
+  //   }
+  // }
+
 
   const ItemTotal=()=>{
     if(cartItems.length <= 0){
@@ -26,9 +44,7 @@ const submitOrderBlock =(props)=>{
       setGrandTotal(0);
     } else {
       const price = [];
-      cartItems.map((item)=>{
-        price.push(item.price)
-      })
+      Object.entries(cartItems).map(container=> price.push(container[1].price))
       const total = price.reduce((a,b)=> a+b)
       const taxAmount = total*0.07;
       const grandAmount = total+taxAmount;
@@ -72,7 +88,7 @@ const submitOrderBlock =(props)=>{
             </div>
           </div>
 
-          <div className="grid-100  v-spacing-large">
+          <div  href="#" className="grid-100  v-spacing-large">
             <a className="js-order-submit met-order-submit btn btn-block btn-add art-co-rp-submitOrderBtn cb-hidden" data-blocked="true" data-enable-submit-order="true" data-submittoken=""
             onClick={()=> console.log("Purchase successful!")}
             >
@@ -80,7 +96,6 @@ const submitOrderBlock =(props)=>{
             </a>
           </div>
         </div>
-
       </div>
     </div>
   )

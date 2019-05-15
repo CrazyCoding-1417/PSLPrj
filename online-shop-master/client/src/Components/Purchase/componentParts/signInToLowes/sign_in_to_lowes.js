@@ -9,7 +9,7 @@ const signInToLowes=props=>{
   const [joinLowes, setJoinLowes] = useState(false)
 
   const onSignInSubmit=()=>{
-    console.log(`fill this in API ${emailInput} and ${passwordInput}`)
+    console.log(`Email: ${emailInput} and PassWOword ${passwordInput}`)
   };
 
   return(

@@ -87,7 +87,7 @@ const ConnectedCartDialog = props => {
               onClick={() => {
                 props.dispatch(showCartDlg(false));
                 props.dispatch(setCheckedOutItems(props.items));
-                props.history.push("/purchase");
+                props.history.push("/order");
               }}
             >
               Checkout

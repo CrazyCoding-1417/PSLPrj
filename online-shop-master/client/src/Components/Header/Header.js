@@ -11,17 +11,12 @@ import { connect } from "react-redux";
 import {
     showCartDlg,
     toggleMenu,
-    setLoggedInUser,
-    setCheckedOutItems
 } from "../../Redux/Actions";
 import cartImage from "../../Images/LowesLogo_DT.svg";
 import Auth from "../../Auth";
 import { categories } from "../../Data";
 import Person from "@material-ui/icons/PersonOutline";
 import Avatar from "@material-ui/core/Avatar";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Select from "@material-ui/core/Select";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 
@@ -34,14 +29,6 @@ const mapStateToProps = state => {
         showMenu: state.showMenu
     };
 };
-
-const categoryOptions = categories.map(x => {
-    return (
-        <MenuItem key={x.name} value={x.name}>
-      {x.name}
-    </MenuItem>
-    );
-});
 
 const ConnectedHeader = props => {
   function showMenu() {
@@ -133,7 +120,7 @@ const ConnectedHeader = props => {
                   );
                 }}
               >
-              <img src = "/Images/SearchIcon.jpg" height="22" width="22"/>
+              <img src = "/Images/SearchIcon.jpg" height="22" width="22" alt="search icon" />
               </Button>
             </div>
           </div>
