@@ -7,7 +7,7 @@ import './payAsGuest.css'
 const submitOrderBlock =(props)=>{
 
 
-  const [cartItems] = useState((state)=> props.cartItems)
+  const [cartItems, setCartItems] = useState((state)=> props.cartItems)
   const [subTotal, setSubTotal] = useState(0);
   const [tax, setTax] = useState(0);
   const [grandTotal, setGrandTotal]= useState(0)
@@ -17,6 +17,26 @@ const submitOrderBlock =(props)=>{
     ItemTotal()
   }, [subTotal, tax, grandTotal])
 
+  // const ItemTotal=()=>{
+  //   if(cartItems.length <= 0){
+  //     setSubTotal(0);
+  //     setTax(0);
+  //     setGrandTotal(0);
+  //   } else {
+  //     const price = [];
+  //     cartItems.map=(item)=>{
+  //       price.push(item.price)
+  //     };
+  //     const total = price.reduce((a,b)=> a+b)
+  //     const taxAmount = total*0.07;
+  //     const grandAmount = total+taxAmount;
+  //     setSubTotal(total.toFixed(2));
+  //     setTax(taxAmount.toFixed(2));
+  //     setGrandTotal(grandAmount.toFixed(2));
+  //   }
+  // }
+
+
   const ItemTotal=()=>{
     if(cartItems.length <= 0){
       setSubTotal(0);
@@ -24,9 +44,7 @@ const submitOrderBlock =(props)=>{
       setGrandTotal(0);
     } else {
       const price = [];
-      cartItems.map =(item)=>{
-        price.push(item.price)
-      };
+      Object.entries(cartItems).map(container=> price.push(container[1].price))
       const total = price.reduce((a,b)=> a+b)
       const taxAmount = total*0.07;
       const grandAmount = total+taxAmount;
