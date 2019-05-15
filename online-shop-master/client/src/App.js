@@ -13,36 +13,34 @@ import Footer from "./Components/Footer/Footer";
 import Purchase from "./Components/Purchase/PurchaseIndex";
 import CheckoutPayment from "./Components/Purchase/componentParts/payAsGuest/payAsGuest"
 
-class App extends Component {
-  render() {
-    return (
-      <div className="app">
-        <Header />
-        <div className="app-body">
-          <Menu />
-          <div className="content">
-            <CartDialog />
-            <Switch>
-              <Route path="/search/" component={ProductList} />
-              <Route path="/" exact component={ProductList} />
-              <Route path="/details/:id" component={Details} />
-              <Route path="/about" render={() => <div>About us</div>} />
-              <Route path="/login" component={Login} />
-              <Route path="/purchase" component={Purchase} />
-              <Route path="/checkout/payment" component={CheckoutPayment} />
-              <ProtectedRoute path="/order" component={Order} />
-              <Route
-                component={() => (
-                  <div style={{ padding: 20 }}>Page not found</div>
-                )}
-              />
-            </Switch>
-          </div>
+function App() {
+  return (
+    <div className="app">
+      <Header />
+      <div className="app-body">
+        <Menu />
+        <div className="content">
+          <CartDialog />
+          <Switch>
+            <Route path="/search/" component={ProductList} />
+            <Route path="/" exact component={ProductList} />
+            <Route path="/details/:id" component={Details} />
+            <Route path="/about" render={() => <div>About us</div>} />
+            <Route path="/login" component={Login} />
+            <Route path="/purchase" component={Purchase} />
+            <Route path="/checkout/payment" component={CheckoutPayment} />
+            <ProtectedRoute path="/order" component={Order} />
+            <Route
+              component={() => (
+                <div style={{ padding: 20 }}>Page not found</div>
+              )}
+            />
+          </Switch>
         </div>
-        <Footer />
       </div>
-    );
-  }
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
