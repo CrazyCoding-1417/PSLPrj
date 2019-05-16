@@ -23,11 +23,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import MenuButton from "../Menu/MenuButton";
 
 const mapStateToProps = state => {
-    return {
-        nrOfItemsInCard: state.cartItems.length,
-        loggedInUser: state.loggedInUser,
-        showMenu: state.showMenu
-    };
+  return {
+    nrOfItemsInCard: state.cartItems.length,
+    loggedInUser: state.loggedInUser,
+    showMenu: state.showMenu
+  };
 };
 
 const ConnectedHeader = props => {
@@ -35,9 +35,9 @@ const ConnectedHeader = props => {
     props.dispatch(toggleMenu());
   }
 
-  const [searchTerm, setSearchTerm] = useState("");
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [categoryFilter, setCategoryFilter] = useState(categories[0].name);
+const [searchTerm, setSearchTerm] = useState("");
+const [anchorEl, setAnchorEl] = useState(null);
+const [categoryFilter, setCategoryFilter] = useState(categories[0].name);
 
   return (
       <div>
@@ -46,8 +46,8 @@ const ConnectedHeader = props => {
       style={{ backgroundColor: "#FAFAFB", height: 100}}
     >
       <div className="col-centered" style={{ backgroundColor:"#004890", color:"white", height: 30}}>
-        <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
-      </div> 
+      <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
+      </div>
       <Toolbar style={{ height: "100%" }} className="container">
         <div className="left-part">
           <a href="/">
@@ -110,9 +110,9 @@ const ConnectedHeader = props => {
                   // Generate new URL to redirect user to
                   props.history.push(
                     "/search/?category=" +
-                      setCategoryFilter +
-                      "&term=" +
-                      setSearchTerm
+                    setCategoryFilter +
+                    "&term=" +
+                    setSearchTerm
                   );
                 }}
               >
