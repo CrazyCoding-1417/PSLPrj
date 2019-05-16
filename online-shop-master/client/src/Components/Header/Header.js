@@ -8,10 +8,8 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import {
-    showCartDlg,
-    toggleMenu,
-} from "../../Redux/Actions";
+import { showCartDlg,toggleMenu,} from "../../Redux/Actions";
+
 import cartImage from "../../Images/LowesLogo_DT.svg";
 import Auth from "../../Auth";
 import { categories } from "../../Data";
@@ -40,88 +38,88 @@ const [anchorEl, setAnchorEl] = useState(null);
 const [categoryFilter, setCategoryFilter] = useState(categories[0].name);
 
   return (
-      <div>
-    <AppBar
-      position="static"
-      style={{ backgroundColor: "#FAFAFB", height: 100}}
-    >
-      <div className="col-centered" style={{ backgroundColor:"#004890", color:"white", height: 30}}>
-      <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
-      </div>
-      <Toolbar style={{ height: "100%" }} className="container">
-        <div className="left-part">
-          <a href="/">
-            <img
-              src={cartImage}
-              alt={"Logo"}
-              style={{ marginLeft: 10 }}
-              width="150"
-              height="150"
-            />
-          </a>
+    <div>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "#FAFAFB", height: 100}}
+      >
+        <div className="col-centered" style={{ backgroundColor:"#004890", color:"white", height: 30}}>
+        <p style={{margin:5, textAlign:"center"}}>FREE SHIPPING ON THOUSANDS OF ITEMS WITH MYLOWE'S. SHOP NOW ></p>
         </div>
-        <div className="right-part">
-          {!props.loggedInUser ? (
-            <Button
-              variant="outlined"
-              style={{ marginRight: 20 }}
-              color="primary"
+        <Toolbar style={{ height: "100%" }} className="container">
+          <div className="left-part">
+            <a href="/">
+              <img
+                src={cartImage}
+                alt={"Logo"}
+                style={{ marginLeft: 10 }}
+                width="150"
+                height="150"
+              />
+            </a>
+          </div>
+          <div className="right-part">
+            {!props.loggedInUser ? (
+              <Button
+                variant="outlined"
+                style={{ marginRight: 20 }}
+                color="primary"
+                onClick={() => {
+                  props.history.push("/login");
+                }}
+              >
+                Log in
+              </Button>
+            ) : (
+              <Avatar
+                onClick={(e) => setAnchorEl(e.currentTarget)}
+                style={{ backgroundColor: "#3f51b5", marginLeft: 50 }}
+              >
+                <Person />
+              </Avatar>
+            )}
+            <IconButton
+              aria-label="Cart"
+              style={{ position: "absolute", right: 0 }}
               onClick={() => {
-                props.history.push("/login");
+                props.dispatch(showCartDlg(true));
               }}
             >
-              Log in
-            </Button>
-          ) : (
-            <Avatar
-              onClick={(e) => setAnchorEl(e.currentTarget)}
-              style={{ backgroundColor: "#3f51b5", marginLeft: 50 }}
-            >
-              <Person />
-            </Avatar>
-          )}
-          <IconButton
-            aria-label="Cart"
-            style={{ position: "absolute", right: 0 }}
-            onClick={() => {
-              props.dispatch(showCartDlg(true));
-            }}
-          >
-            <Badge badgeContent={props.nrOfItemsInCard} color="primary">
-              <ShoppingCartIcon />
-            </Badge>
-          </IconButton>
-        </div>
-      </Toolbar>
-    </AppBar>
-        <Toolbar style={{ backgroundColor:"#0471af", color:"white", height: 30}}>
-          <div className="left-part left-part--search-menu-bar" >
-            <MenuButton onMouseEnter={showMenu}/>
-              <div backgroundcolor="white" className=" search-input__container">
-                <input type="text" placeholder="What are you looking for today?"
+              <Badge badgeContent={props.nrOfItemsInCard} color="primary">
+                <ShoppingCartIcon />
+              </Badge>
+            </IconButton>
+          </div>
+        </Toolbar>
+      </AppBar>
+      <Toolbar style={{ backgroundColor:"#0471af", color:"white", height: 30}}>
+        <div className="left-part left-part--search-menu-bar" >
+          <MenuButton onMouseEnter={showMenu}/>
+            <div backgroundcolor="white" className=" search-input__container">
+              <input type="text" placeholder="What are you looking for today?"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 style={{ width: 800, padding: 10, backgroundColor: "white"}}
-              />
-              <Button
-                height="20" width="20"
-                style={{ backgroundColor: "white", border:"white", borderWidth:"10"}}
-                onClick={() => {
-                  // Generate new URL to redirect user to
-                  props.history.push(
-                    "/search/?category=" +
-                    setCategoryFilter +
-                    "&term=" +
-                    setSearchTerm
-                  );
-                }}
-              >
-              <img src = "/Images/SearchIcon.jpg" height="22" width="22" alt="search icon" />
-              </Button>
-            </div>
+            />
+            <Button
+              height="20" width="20"
+              style={{ backgroundColor: "white", border:"white", borderWidth:"10"}}
+              onClick={() => {
+                // Generate new URL to redirect user to
+                props.history.push(
+                  "/search/?category=" +
+                  setCategoryFilter +
+                  "&term=" +
+                  setSearchTerm
+                );
+              }}
+            >
+            <img src = "/Images/SearchIcon.jpg" height="22" width="22" alt="search icon" />
+            </Button>
           </div>
-      </Toolbar>
-    </div>
+        </div>
+    </Toolbar>
+  </div>
   );
 }
 
