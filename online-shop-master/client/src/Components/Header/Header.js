@@ -100,9 +100,7 @@ const ConnectedHeader = props => {
               <div backgroundcolor="white" className=" search-input__container">
                 <input type="text" placeholder="What are you looking for today?"
                 value={searchTerm}
-                onChange={e => {
-                  this.setState({ searchTerm: e.target.value });
-                }}
+                onChange={(e) => setSearchTerm(e.target.value)}
                 style={{ width: 800, padding: 10, backgroundColor: "white"}}
               />
               <Button
