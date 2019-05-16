@@ -180,10 +180,9 @@ class ProductList extends Component {
                     });
                   }}
                 >
-                  {this.getParamFromQS("minPrice") +
-                    "$ - " +
-                    this.getParamFromQS("maxPrice") +
-                    "$"}
+                  {"$"+ this.getParamFromQS("minPrice") +
+                    " - " + "$" +
+                    this.getParamFromQS("maxPrice")}
                 </Button>
               </Tooltip>
             )}
