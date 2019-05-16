@@ -5,7 +5,7 @@ import queryString from "query-string";
 
 export default function MenuMain(...props) {
     return (
-       <Grow in={props[0].showMenu}>
+      <Grow in={props[0].showMenu}>
       <div
         className="menuMain__container"
         onMouseLeave={()=>{
@@ -25,7 +25,6 @@ export default function MenuMain(...props) {
           .map((x, i) => {
             if (x.type === "item") {
               return (
-
                 <NavLink
                   to={x.url}
                   exact
@@ -53,25 +52,22 @@ export default function MenuMain(...props) {
                     color: "#4282ad"
                   }}
                 >
-                  <div className="menuItem"
+                <div className="menuItem"
                   onMouseEnter={(event)=>{
                     const cat = event.currentTarget.parentElement.title;
                     const m = props[0].menuItems.filter((x)=>{
-                        if(x.name === cat){
-                          return x.subCategory
-                        }
+                      if(x.name === cat){
+                        return x.subCategory
+                      }
                     });
                     props[0].toggleSubMenu(m[0].subCategory);
-
                   }}
-                  >
-                    {x.name}
-                  </div>
-
-                </NavLink>
+                >
+                {x.name}
+                </div>
+              </NavLink>
              );
             }
-
             return null;
           })}
 
