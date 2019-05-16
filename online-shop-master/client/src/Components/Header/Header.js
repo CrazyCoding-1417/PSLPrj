@@ -74,9 +74,7 @@ const ConnectedHeader = props => {
             </Button>
           ) : (
             <Avatar
-              onClick={event => {
-                this.setState({ anchorEl: event.currentTarget });
-              }}
+              onClick={(e) => setAnchorEl(e.currentTarget)}
               style={{ backgroundColor: "#3f51b5", marginLeft: 50 }}
             >
               <Person />
