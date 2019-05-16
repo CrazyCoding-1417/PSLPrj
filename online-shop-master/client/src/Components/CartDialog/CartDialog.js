@@ -28,7 +28,7 @@ const ConnectedCartDialog = props => {
         <Dialog
           open={props.open}
           onClose={() => {
-            this.props.dispatch(showCartDlg(false));
+            props.dispatch(showCartDlg(false));
           }}
         >
           <AppBar position="static" style={{ backgroundColor: "#3863aa" }}>
