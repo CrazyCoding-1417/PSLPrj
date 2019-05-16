@@ -77,7 +77,7 @@ const ConnectedCartDialog = props => {
               }}
             >
               {" "}
-              Total Price: $ {totalPrice}
+              Total Price: $ {(totalPrice).toFixed(2)}
             </div>
             <Button
               style={{ float: "right", margin: 20 }}
