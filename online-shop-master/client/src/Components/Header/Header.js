@@ -110,9 +110,9 @@ const ConnectedHeader = props => {
                   // Generate new URL to redirect user to
                   props.history.push(
                     "/search/?category=" +
-                      this.state.categoryFilter +
+                      setCategoryFilter +
                       "&term=" +
-                      this.state.searchTerm
+                      setSearchTerm
                   );
                 }}
               >
