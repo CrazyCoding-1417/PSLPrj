@@ -67,7 +67,7 @@ const ConnectedHeader = props => {
               style={{ marginRight: 20 }}
               color="primary"
               onClick={() => {
-                this.props.history.push("/login");
+                props.history.push("/login");
               }}
             >
               Log in
@@ -112,7 +112,7 @@ const ConnectedHeader = props => {
                 style={{ backgroundColor: "white", border:"white", borderWidth:"10"}}
                 onClick={() => {
                   // Generate new URL to redirect user to
-                  this.props.history.push(
+                  props.history.push(
                     "/search/?category=" +
                       this.state.categoryFilter +
                       "&term=" +
