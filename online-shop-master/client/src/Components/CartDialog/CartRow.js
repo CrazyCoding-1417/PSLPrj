@@ -27,7 +27,7 @@ const CartRow = props => {
           </div>
         </Link>
       </TableCell>
-      <TableCell>{item.price}</TableCell>
+      <TableCell>{(item.price).toFixed(2)}</TableCell>
       <TableCell>
         <TextField
           type="number"
